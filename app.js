@@ -77,6 +77,83 @@ function renderStandings(members, snapshot, history) {
     $('#standings-cards').replaceChildren(...cards);
 }
 
+function renderChart(members, history) {
+    const wrap = $('#chart');
+    const entries = history
+        .map((h) => ({ ...h, published: h.published || h.date }))
+        .sort((a, b) => a.published.localeCompare(b.published));
+    if (!entries.length) {
+        wrap.replaceChildren(el('p', { class: 'note' }, 'No leaderboard history yet.'));
+        return;
+    }
+    // Scoring began with the Oct. 2 weekend, so every team starts the season at zero.
+    const start = { key: 'Season start', published: '2026-10-02', start: true, teams: Object.fromEntries(members.map((m) => [m.team, { score: 0 }])) };
+    const weeks = [start, ...entries.filter((e) => e.published > start.published)];
+
+    const W = 720, H = 300, L = 40, R = 150, T = 14, B = 28;
+    const day = (iso) => Date.parse(iso + 'T12:00:00') / 86400000;
+    const d0 = day(weeks[0].published), d1 = day(weeks[weeks.length - 1].published);
+    const x = (iso) => L + ((day(iso) - d0) / Math.max(d1 - d0, 1)) * (W - L - R);
+    const maxScore = Math.max(10, ...weeks.flatMap((w) => Object.values(w.teams).map((t) => t.score)));
+    const step = [10, 20, 25, 50, 100, 200, 250, 500].find((s) => maxScore / s <= 6) || 1000;
+    const top = Math.ceil(maxScore / step) * step;
+    const y = (v) => T + (1 - v / top) * (H - T - B);
+
+    const svgNS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(svgNS, 'svg');
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+    svg.setAttribute('role', 'img');
+    svg.setAttribute('aria-label', 'Running totals by week');
+    const s = (tag, attrs, text) => {
+        const n = document.createElementNS(svgNS, tag);
+        for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v);
+        if (text != null) n.textContent = text;
+        svg.append(n);
+        return n;
+    };
+
+    for (let v = 0; v <= top; v += step) {
+        s('line', { class: 'grid', x1: L, x2: W - R, y1: y(v), y2: y(v) });
+        s('text', { class: 'axis', x: L - 6, y: y(v) + 4, 'text-anchor': 'end' }, v);
+    }
+    weeks.forEach((w) => {
+        s('text', { class: 'axis', x: x(w.published), y: H - 8, 'text-anchor': 'middle' },
+            w.start ? 'Start' : fmtDate(w.published));
+    });
+
+    // Labels at the right edge, nudged apart so tied or close teams stay legible.
+    const ends = members
+        .map((m) => ({ m, score: weeks[weeks.length - 1].teams[m.team]?.score }))
+        .filter((e) => e.score != null)
+        .sort((a, b) => b.score - a.score);
+    let lastY = -Infinity;
+    for (const e of ends) {
+        e.ly = Math.max(y(e.score), lastY + 15);
+        lastY = e.ly;
+    }
+
+    for (const m of members) {
+        const pts = weeks.filter((w) => w.teams[m.team]).map((w) => ({ w, px: x(w.published), py: y(w.teams[m.team].score) }));
+        if (!pts.length) continue;
+        s('polyline', { class: 'line', stroke: m.color, points: pts.map((p) => `${p.px},${p.py}`).join(' ') });
+        for (const p of pts) {
+            const derived = !!p.w.source;
+            const c = s('circle', { class: 'pt', cx: p.px, cy: p.py, r: 4, fill: derived ? 'var(--panel)' : m.color, stroke: derived ? m.color : 'var(--panel)' });
+            const title = document.createElementNS(svgNS, 'title');
+            title.textContent = `${m.name} · ${p.w.key}: ${p.w.teams[m.team].score}${derived ? ' (reconstructed)' : ''}`;
+            c.append(title);
+        }
+        const end = ends.find((e) => e.m === m);
+        s('text', { class: 'label', x: W - R + 10, y: end.ly + 4, fill: m.color }, `${m.name} ${end.score}`);
+    }
+    wrap.replaceChildren(svg);
+
+    const derivedWeeks = entries.filter((e) => e.source);
+    if (derivedWeeks.length) {
+        $('#chart-note').textContent = `Running totals from each Tuesday leaderboard. Hollow points (${derivedWeeks.map((e) => fmtDate(e.published)).join(', ')}) are reconstructed from the per-movie points Vulture reported that week, so ranks are unknown; weeks with no point were not captured.`;
+    }
+}
+
 function renderNews(snapshot) {
     const recap = $('#recap');
     if (snapshot.recap?.length) {
@@ -264,6 +341,7 @@ async function main() {
         members.sort((a, b) => (snapshot.members[b.team]?.score ?? -1) - (snapshot.members[a.team]?.score ?? -1));
         renderMeta(snapshot, league);
         renderStandings(members, snapshot, history);
+        renderChart(members, history);
         renderNews(snapshot);
         renderRosters(members, snapshot, prices);
         renderLeague(members, snapshot, league);

@@ -308,13 +308,19 @@ def main() -> None:
     hist_path = DATA / "history.json"
     history = json.loads(hist_path.read_text()) if hist_path.exists() else []
     key = updated_label or today
+    try:
+        published = datetime.strptime(updated_label, "%B %d, %Y").date().isoformat()
+    except (TypeError, ValueError):
+        published = today
     history = [h for h in history if h["key"] != key]
     history.append({
         "key": key,
         "date": today,
+        "published": published,
         "teams": {name: {"score": t["score"], "rank": t["rank"]} for name, t in members.items()},
         "movies": {m: p for m, p in movie_points.items() if p},
     })
+    history.sort(key=lambda h: h.get("published") or h["date"])
     hist_path.write_text(json.dumps(history, indent=1, ensure_ascii=False) + "\n")
 
     print(f"{total_teams} teams, leaderboard {updated_label or 'date unknown'}, "

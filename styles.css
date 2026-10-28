@@ -163,6 +163,70 @@ h3 {
 .delta.up { color: var(--green); }
 .delta.flat { color: var(--muted); }
 
+/* Week-by-week chart */
+.chart-wrap {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 12px 8px 4px;
+}
+
+.chart-wrap svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-family: inherit;
+}
+
+.chart-wrap .grid {
+    stroke: var(--line);
+    stroke-width: 1;
+}
+
+.chart-wrap .axis {
+    fill: var(--muted);
+    font-size: 11px;
+}
+
+.chart-wrap .line {
+    fill: none;
+    stroke-width: 2.5;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+.chart-wrap .line.derived {
+    stroke-dasharray: 5 4;
+}
+
+.chart-wrap .pt {
+    stroke: var(--panel);
+    stroke-width: 1.5;
+}
+
+.chart-wrap .label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.chart-wrap .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    padding: 6px 8px 4px;
+    font-size: 0.82rem;
+    color: var(--muted);
+}
+
+.chart-wrap .legend .swatch {
+    display: inline-block;
+    width: 18px;
+    height: 3px;
+    vertical-align: middle;
+    margin-right: 6px;
+    border-radius: 2px;
+}
+
 /* This week */
 .recap {
     background: var(--panel);

@@ -21,7 +21,8 @@ mini-league is still shown for context, with the other group tagged.
 | `index.html`, `app.js`, `styles.css` | The page. Vanilla JS, no build step. |
 | `data/league.json` | Who we are: name → exact Vulture team name. Edit to add people. |
 | `data/snapshot.json` | Generated. Latest leaderboard rows for us and the official league, plus per-movie points. |
-| `data/history.json` | Generated. One entry per leaderboard publish: team scores/ranks and movie points. |
+| `data/history.json` | Generated. One entry per leaderboard publish: team scores/ranks and movie points. Feeds the week-by-week chart. |
+| `data/backfill.json` | Weeks from before the tracker existed, as the per-movie points Vulture reported; `scripts/backfill.py` turns them into history entries from the rosters. |
 | `data/prices.json` | Draft price and box-office eligibility per movie, from the [draft guide](https://www.vulture.com/article/movies-fantasy-league-draft-guide.html). |
 | `data/rules.json` | Scoring tables and awards calendar, transcribed from the hub page. |
 | `scripts/update.py` | Fetches the leaderboard and regenerates the two data files. Standard library only. |
@@ -43,7 +44,6 @@ case; search the hub leaderboard to get it right.
 ## Later
 
 - Link to / fold in the Oscar predictions page for the 2027 ceremony.
-- Score history chart once there are a few weeks of `history.json`.
 - Per-movie event log (which award or box-office milestone added the points) — the
   week-over-week diff in `history.json` plus the awards calendar makes most of these
   inferable.
