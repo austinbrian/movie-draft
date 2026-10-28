@@ -54,7 +54,9 @@ def find_leaderboard(hub_html: str) -> tuple[str, str | None]:
 
 
 TAG_URL = "https://www.vulture.com/tags/movies-fantasy-league/"
-KEEP_TAGS = re.compile(r"</?(em|strong|i|b)>|<a [^>]*href=\"[^\"]+\"[^>]*>|</a>")
+KEEP_TAGS = re.compile(r"</?(em|strong|i|b)>|<br\s*/?>|<a [^>]*href=\"[^\"]+\"[^>]*>|</a>")
+BODY_BLOCK_RE = re.compile(
+    r'<(p|h2)\s+class="(clay-paragraph|clay-subheader_fancy[^"]*|list-item-text)"[^>]*>(.*?)</\1>', re.S)
 
 
 def clean_html(fragment: str) -> str:
@@ -67,6 +69,8 @@ def clean_html(fragment: str) -> str:
             if tag.startswith("<a "):
                 href = re.search(r'href="([^"]+)"', tag).group(1)
                 tag = f'<a href="{href}">'
+            elif tag.startswith("<br"):
+                tag = "<br>"
             out.append(tag)
         pos = m.end()
     out.append(fragment[pos:])
@@ -84,9 +88,30 @@ def hub_recap(hub_html: str) -> list[str]:
     return [p for p in (clean_html(p) for p in paras) if p]
 
 
-def recent_articles(limit: int = 8) -> list[dict]:
-    """Latest MFL-tagged articles, which is where the weekly newsletter gets republished."""
+def article_body(url: str) -> list[dict]:
+    """The paragraphs and subheads of a Vulture article, in order, as
+    [{"tag": "p"|"h2", "html": ...}] with the markup reduced like the recap."""
+    html = fetch(url).decode("utf-8", "replace")
+    start = html.find('class="article-content')
+    if start < 0:
+        return []
+    end = html.find("<aside", start)
+    blocks = []
+    for tag, _cls, inner in BODY_BLOCK_RE.findall(html[start:end if end > 0 else None]):
+        # "Hanging" subheads carry a decorative bullet element; drop it.
+        inner = re.sub(r'<span class="unordered-list-item">.*?</span>', "", inner, flags=re.S)
+        text = clean_html(inner).replace("\ufeff", "")
+        if text:
+            blocks.append({"tag": tag, "html": text})
+    return blocks
+
+
+def recent_articles(limit: int = 8, cached: dict[str, list] | None = None) -> list[dict]:
+    """Latest MFL-tagged articles, which is where the weekly newsletter gets
+    republished. Newsletter issues also get their full text, so the page can show
+    it inline; bodies already in the last snapshot are reused rather than refetched."""
     html = fetch(TAG_URL).decode("utf-8", "replace")
+    cached = cached or {}
     items = []
     for block in re.findall(r'<li\s+class="article "(.*?)</li>', html, re.S):
         link = re.search(r'<a href="(https://www\.vulture\.com/article/[^"]+)" class="link-text"><span class="headline">(.*?)</span></a>', block, re.S)
@@ -100,13 +125,21 @@ def recent_articles(limit: int = 8) -> list[dict]:
         else:
             label = when.group(1).strip() if when else None
         teaser = re.search(r'<span class="teaser">(.*?)</span>', block, re.S)
-        items.append({
-            "url": link.group(1),
+        url = link.group(1)
+        item = {
+            "url": url,
             "title": clean_html(link.group(2)),
             "date": label,
             "teaser": clean_html(teaser.group(1)) if teaser else "",
-            "newsletter": "mfl-newsletter" in link.group(1) or "newsletter" in link.group(1),
-        })
+            "newsletter": "newsletter" in url,
+        }
+        if item["newsletter"]:
+            try:
+                item["body"] = cached.get(url) or article_body(url)
+            except Exception as exc:
+                print(f"warning: could not fetch {url}: {exc}", file=sys.stderr)
+                item["body"] = cached.get(url, [])
+        items.append(item)
         if len(items) >= limit:
             break
     return items
@@ -201,8 +234,11 @@ def main() -> None:
     lb_url, updated_label = find_leaderboard(hub_html)
     raw = json.loads(fetch(lb_url))
     recap = hub_recap(hub_html)
+    snap_path = DATA / "snapshot.json"
+    previous = json.loads(snap_path.read_text()) if snap_path.exists() else {}
+    cached_bodies = {a["url"]: a["body"] for a in previous.get("articles", []) if a.get("body")}
     try:
-        articles = recent_articles()
+        articles = recent_articles(cached=cached_bodies)
     except Exception as exc:  # the news list is a nicety; never block the leaderboard on it
         print(f"warning: could not fetch articles: {exc}", file=sys.stderr)
         articles = []
@@ -265,7 +301,7 @@ def main() -> None:
             for m in sorted(movie_points)
         },
     }
-    (DATA / "snapshot.json").write_text(json.dumps(snapshot, indent=1, ensure_ascii=False) + "\n")
+    snap_path.write_text(json.dumps(snapshot, indent=1, ensure_ascii=False) + "\n")
 
     # History: one entry per leaderboard publish (keyed on the label when we
     # have it, else the fetch date), replacing any earlier entry for the same key.

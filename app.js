@@ -86,7 +86,27 @@ function renderNews(snapshot) {
     } else {
         recap.replaceChildren(el('p', { class: 'note' }, 'No recap found on the hub page this week.'));
     }
-    const items = (snapshot.articles || []).map((a) => {
+    const articles = snapshot.articles || [];
+    const newsletters = articles.filter((a) => a.newsletter && a.body?.length);
+    // Newsletter issues get their full text, newest one open, the rest click-to-expand.
+    const issues = newsletters.map((a, i) => {
+        const summary = el('summary', {},
+            el('span', { class: 'when' }, a.date || ''),
+            el('span', { class: 'title' }));
+        summary.querySelector('.title').innerHTML = a.title;
+        const body = el('div', { class: 'body' });
+        // Paragraphs are Vulture's own markup, reduced to text plus em/strong/a/br by the updater.
+        body.innerHTML = a.body.map((b) => `<${b.tag}>${b.html}</${b.tag}>`).join('');
+        body.append(el('p', { class: 'attribution' }, '— ', el('a', { href: a.url }, 'read on vulture.com')));
+        const d = el('details', { class: 'newsletter' }, summary, body);
+        if (i === 0) d.open = true;
+        return d;
+    });
+    $('#newsletters').replaceChildren(...issues);
+    $('#newsletters-head').hidden = issues.length === 0;
+
+    const rest = articles.filter((a) => !newsletters.includes(a));
+    const items = rest.map((a) => {
         const li = el('li', {},
             el('span', { class: 'when' }, a.date || ''),
             el('a', { href: a.url }),
@@ -98,6 +118,7 @@ function renderNews(snapshot) {
         return li;
     });
     $('#articles').replaceChildren(...items);
+    $('#articles-head').hidden = items.length === 0;
 }
 
 function renderRosters(members, snapshot, prices) {

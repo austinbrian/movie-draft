@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-10-28T01:10:14+00:00",
+ "fetchedAt": "2026-10-28T02:44:27+00:00",
  "leaderboardUpdated": "October 20, 2026",
  "leaderboardUrl": "https://www.vulture.com/static/leaderboard/production/cmuec30my000h3b7egrtm2p6h.json",
  "totalTeams": 30224,
@@ -28,7 +28,85 @@
    "title": "<em>Verity</em> Pickers Surge to the Top in the First Week of MFL Scoring",
    "date": "Oct. 6, 2026",
    "teaser": "And then there’s the feels-like-being-trapped-inside-a-tuba <em>Digger</em>.",
-   "newsletter": true
+   "newsletter": true,
+   "body": [
+    {
+     "tag": "p",
+     "html": "We are off and running after the first weekend of scoring in the Movies Fantasy League. Only two movies earned points — and if you drafted either of them you got fewer points than you were probably hoping for — but nevertheless we’re underway. We’ve also got stats to report on the most drafted movies and a look ahead at what to expect in the coming weeks. Awards points are coming sooner than you might think!"
+    },
+    {
+     "tag": "p",
+     "html": "Anne Hathaway and Dakota Johnson’s twisty, glamorous thriller <a href=\"https://www.vulture.com/article/review-anne-hathaway-deserves-better-than-verity.html\"><em>Verity</em></a> took the top spot at the box office this weekend. It’s the first adaptation of a Colleen Hoover novel to open at No. 1, after 2024’s <a href=\"https://www.vulture.com/article/it-ends-with-us-review-youve-seen-this-movie-before.html\"><em>It Ends With Us</em></a>, 2025’s <a href=\"https://www.vulture.com/article/review-regretting-you-is-absolutely-psychotic.html\"><em>Regretting You</em></a>, and <a href=\"https://www.vulture.com/article/review-reminders-of-him-wont-be-hard-to-forget.html\"><em>Reminders of Him</em></a> earlier this year all opened at No. 2. With its $32 million opening-weekend take, <em>Verity</em> earned a total of 62 MFL points. Here’s a quick breakdown to get you (re-) acquainted with how we score box-office earnings around these parts:"
+    },
+    {
+     "tag": "p",
+     "html": "<em>Verity</em>’s total box office to date: <strong>$32,618,776</strong><br><strong>+32</strong> points: one point for every million earned<br><strong>+10</strong> bonus points for clearing the $25 million threshold<br><strong>+20</strong> bonus points for finishing No. 1 at the weekend box office<br><strong>= 62</strong> <strong>points</strong>"
+    },
+    {
+     "tag": "p",
+     "html": "That’s a solid opening weekend for <em>Verity</em> drafters. To compare to last year’s MFL opening weekend, <em>One Battle After Another</em> premiered to $22 million and 42 MFL points total. Now all <em>Verity</em> needs to do is follow <em>OBAA</em>’s <a href=\"https://www.vulture.com/article/one-battle-after-another-box-office-movies-fantasy-league.html\">2025</a> <a href=\"https://www.vulture.com/article/one-battle-after-another-critics-awards-mfl-newsletter.html\">trajectory</a> <a href=\"https://www.vulture.com/article/one-battle-after-another-golden-globes-mfl-newsletter.html\">perfectly</a> and we’ll be in business."
+    },
+    {
+     "tag": "p",
+     "html": "And then there was <em>Digger</em>. Poor, maligned, disastrous, <a href=\"https://www.vulture.com/article/is-this-the-years-most-annoying-movie-digger-tom-cruise-reactions.html\">feels-like-being-trapped-inside-a-tuba</a> <em>Digger</em>. The Tom Cruise–starring film directed by two-time Oscar winner Alejandro González Iñárritu was already tracking incredibly poorly heading into its opening weekend, and that bad advance buzz plus the largely terrible reviews didn’t help what was already going to be a tough sell — “Come watch your parents’ favorite action star caked in old-age makeup hollering about who’s to blame for climate catastrophe!” The result was an $8 million opening that calls into question what we were all assuming would be Cruise’s Oscar campaign (<a href=\"https://www.vulture.com/article/tom-cruise-digger-oscar-best-actor-chances-2027.html\">it could still happen!</a>) and leaves anyone who picked <em>Digger</em> for their MFL squad feeling more stricken than that damned animatronic cat."
+    },
+    {
+     "tag": "p",
+     "html": "Without any bonus points — at this point the $25 million threshold is going to be tough to achieve — <em>Digger</em> debuts with a flat eight MFL points. Its Metacritic score is currently at 46, which would earn it zero points, though those points won’t be awarded until the first week of January anyway. The Letterboxd points come in even later than that — March 1, to be precise — and that’s currently <em>Digger</em>’s silver lining, as it holds a 3.8-star rating, good for 70 out of a possible 100 points. We’ll see if that number holds over the next five months."
+    },
+    {
+     "tag": "h2",
+     "html": "Stats! Oh, the Stats!"
+    },
+    {
+     "tag": "p",
+     "html": "You can check out the leaderboard in the <a href=\"https://www.vulture.com/movies-league/\">MFL hub</a>, to see where your team stands. There are 201 players who have both <em>Digger</em> and <em>Verity</em> on their squad, and they’re all currently tied for the lead with 70 points. I fear they won’t stay in the lead for the long haul, but I hope they enjoy this time in the sun."
+    },
+    {
+     "tag": "p",
+     "html": "While we’re on the subject of overall MFL numbers, as of Monday, October 5, there are 29,072 players competing. In addition, we have 2,479 mini-leagues with at least two players. (We’ll delete mini-leagues with one player only when sign-ups end on December 17, so if you’re currently rocking a one-man mini-league you’ve got just over two months to recruit.) And stay tuned for next week’s update for stats on the brand-new Letterboxd League. In the meantime, if you need to make a correction or change to the mini-league you signed up for, GREAT NEWS: We have an online form you can fill out to accomplish just that. Just <a href=\"https://www.vulture.com/article/mfl-mini-league-correction-form.html\"><strong>click here</strong></a> and provide your Display Name (a.k.a. your team’s name), email address, and the correct mini-league you want to join."
+    },
+    {
+     "tag": "h2",
+     "html": "Most (and Least) Drafted Movies … So Far"
+    },
+    {
+     "tag": "p",
+     "html": "The most selected movie overall thus far is the highly anticipated <em>Dune: Part Three</em>, which as of Monday, October 5, appears on just north of 10,000 rosters, or about 34 percent of the league. The Nathan Fielder–Lance Oppenheim quasi documentary <em>You Can See Everything</em> is next in line, with 9,000 players drawn in by Elizabeth Holmes’s transfixing promises of honesty (and that bargain-friendly $3 price tag). Rounding out the top five are <em>The Odyssey</em>, <em>The Hunger Games: Sunrise on the Reaping</em>,<em> </em>and festival sensation<em> La Bola Negra</em>."
+    },
+    {
+     "tag": "p",
+     "html": "Just for fun, the five least drafted movies — besides the pushed-to-2027 <em>Here Comes the Flood</em>, from which everybody wisely stayed away — are <em>The Boy in the Iron Box </em>(also seemingly destined for 2027, though no official announcement from Netflix yet), the Nick Robinson–Emilia Jones rom-dram <em>Charlie Harper</em>, the Guy Ritchie nonevent <em>In the Grey</em>, the Joe Swanberg joint <em>The Sun Never Sets</em>, and the Owen Wilson–Alan Ritchson action comedy <em>Runner</em>."
+    },
+    {
+     "tag": "p",
+     "html": "<strong>Most Drafted Movies:</strong><br>➼ <em>Dune: Part Three</em>: 10,023<br>➼ <em>You Can See Everything</em>: 9,054<br>➼ <em>The Odyssey</em>: 8,169<br>➼ <em>The Hunger Games: Sunrise on the Reaping</em>: 7,883<br>➼ <em>La Bola Negra</em>: 7,750"
+    },
+    {
+     "tag": "p",
+     "html": "<strong>Least Drafted Movies:</strong><br>➼ <em>The Boy in the Iron Box</em>: 24<br>➼ <em>Charlie Harper</em>: 23<br>➼ <em>In the Grey</em>: 15<br>➼ <em>The Sun Never Sets</em>: 15<br>➼ <em>Runner</em>: 11<br>➼ <em>Here Comes the Flood</em>: 0"
+    },
+    {
+     "tag": "h2",
+     "html": "Coming Soon"
+    },
+    {
+     "tag": "p",
+     "html": "The following movies open this Friday, October 9, and will hopefully start earning you points:"
+    },
+    {
+     "tag": "p",
+     "html": "<strong>➼ </strong><em>The Social Reckoning</em><br><strong>➼<em> </em></strong><em>Fjord </em><br><strong>➼ </strong><em>Other Mommy </em><br><strong>➼<em> </em></strong><em>Animals </em><br><strong>➼<em> </em></strong><em>Your Mother Your Mother Your Mother </em><br><strong>➼ </strong><em>Misty Green </em><br><strong><em>➼</em> </strong><em>Tenzing</em>"
+    },
+    {
+     "tag": "h2",
+     "html": "Upcoming Awards"
+    },
+    {
+     "tag": "p",
+     "html": "<strong>Gotham Awards Nominations:</strong> October 27<br><strong>Gotham Awards</strong>: November 30<br><strong>Film Independent Spirit Awards Nominations</strong>: December 2"
+    }
+   ]
   },
   {
    "url": "https://www.vulture.com/article/vulture-movie-fantasy-league-staff-picks.html",
@@ -63,7 +141,45 @@
    "title": "Venice Wrap-Up: <em>Woman Unknown</em> Enters the Oscar Race",
    "date": "Sept. 15, 2026",
    "teaser": "Venice was a showcase for career-best performances — the Best Actor race is heating up.",
-   "newsletter": true
+   "newsletter": true,
+   "body": [
+    {
+     "tag": "p",
+     "html": "<em>We’re just a few weeks out from the start of scoring for this season of the </em><a href=\"https://www.vulture.com/movies-league/\"><em>Movies Fantasy League</em></a> <em>on October 2. If this Venice dispatch helped you lock in your choices, you can submit your roster now.</em>"
+    },
+    {
+     "tag": "p",
+     "html": "If you were waiting for the Venice Film Festival to give a preview of what awards season will look like, what you got was a mixed bag. This was certainly true at Saturday night’s awards presentation, when the prestigious Golden Lion went to the Danish/Swedish/Latvian film <em>Woman Unknown</em>. The film, directed by May el-Toukhy, is set in Denmark in the aftermath of World War II, as a maid prepares to marry her former employer. Mathilde Arcel also won the festival’s Best Actress award for her portrayal of the main character. Vulture’s Bilge Ebiri called it a “<a href=\"https://www.vulture.com/article/woman-unknown-movie-review.html\">masterful film</a>,” and its victory in Venice means it is now automatically qualified for the pool of films eligible for the Best International Feature Award at the Oscars."
+    },
+    {
+     "tag": "p",
+     "html": "Still, <em>Woman Unknown</em> is not the kind of Golden Lion winner that will set the course of the rest of awards season, as has happened with films like <a href=\"https://www.vulture.com/2018/03/why-did-the-shape-of-water-win-best-picture.html\"><em>The Shape of Water</em></a>, <a href=\"https://www.vulture.com/2019/09/venice-film-festival-joker-roman-polanski-take-top-prizes.html\"><em>Joker</em></a>, and <a href=\"https://www.vulture.com/2023/09/venice-international-film-festival-full-winners-list.html\"><em>Poor Things</em></a>. But as we learned with <em>The Brutalist</em> two years ago, a Venice premiere can make a big splash in the awards race even without winning the top prize. Such was the case with <a href=\"https://www.vulture.com/article/wild-horse-nine-gives-john-malkovich-the-role-of-his-career.html\"><em>Wild Horse Nine</em></a>, director Martin McDonagh’s follow-up to his pair of Best Picture nominees, <a href=\"https://www.vulture.com/2018/01/three-billboards-outside-ebbing-missouri-best-picture-win.html\"><em>Three Billboards Outside Ebbing, Missouri</em></a> and <a href=\"https://www.vulture.com/2022/10/oscar-futures-can-banshees-banter-its-way-to-a-trophy.html\"><em>The Banshees of Inisherin</em></a>. John Malkovich won for Best Actor, and, combined with the raves he received when the movie premiered at Telluride days later, he’s firmly established near the very top of the Oscars race."
+    },
+    {
+     "tag": "p",
+     "html": "The festival’s Grand Jury Prize — essentially second place — went to director Lee Chang-dong’s <em>Possible Love</em>. It’s his first movie since 2018’s <a href=\"https://www.vulture.com/2018/10/steven-yeun-burning-review.html\"><em>Burning</em></a> was a huge festival favorite, and while that movie was not able to turn that enthusiasm into an Oscars run, there can be a cumulative effect of having a second straight triumph at the major festivals. <a href=\"https://www.vulture.com/article/the-best-film-at-venice-film-fest-2026-is-possible-love.html\">Bilge Ebiri wrote</a> that the film “might be the most powerful, political, hypnotic film of [Lee’s] career.” It has been selected as South Korea’s submission to the Best International Feature Oscar race, so you can look to those Academy shortlists in December with some justified hope that <em>Possible Love</em> will make it."
+    },
+    {
+     "tag": "p",
+     "html": "But the film that made the biggest waves at Venice was undoubtedly the documentary <a href=\"https://www.vulture.com/article/review-naza-is-one-of-the-most-important-films-of-our-time.html\"><em>NAZA</em></a>. A late entrant into the Venice lineup (and also the New York Film Festival’s later this month), <em>NAZA</em> is the latest film from directors Yuval Abraham and Rachel Szor, two of the directors on the searing 2024 doc <a href=\"https://www.vulture.com/article/review-will-no-other-land-make-it-to-theaters-in-america.html\"><em>No Other Land</em></a>. That film, which depicted the forced displacement of a Palestinian community in the West Bank, won the Best Documentary Feature Oscar. With <em>NAZA</em>, Abraham and Szor directly interview 24 Israeli intelligence officers, under cover of anonymity, to get them to describe the planning and execution of the systemic killings of civilians in Gaza. Ebiri called the film a “bombshell,” and the response to the film out of Venice was nothing short of awed. Say what you will about the utility of measuring films by the length of their standing ovations, but the reported<a href=\"https://www.vulture.com/article/naza-breaks-venices-standing-o-meter.html\"> 25 minutes of standing applause</a> at Venice does seem to reflect just how much <em>NAZA</em> has towered over all the other films in discussion along the canals."
+    },
+    {
+     "tag": "p",
+     "html": "Of the other films in competition, Danny Boyle’s <em>Ink </em>— about the transformation of the Rupert Murdoch–owned <em>Sun</em> newspaper in London into the beacon for tabloid extremity it is today — drew mostly positive responses as the festival’s opening-night film. It’s a Netflix release and will likely be one of the platform’s top films to push for awards. (The streamer recently announced it will be reporting box office grosses for its upcoming slate of theatrical releases, which means <em>Ink </em>will be one of the first Netflix movies to get public box office numbers.)"
+    },
+    {
+     "tag": "p",
+     "html": "Werner Herzog’s <a href=\"https://www.vulture.com/article/review-bucking-fastard-is-nucking-futs.html\"><em>Bucking Fastard</em></a>, starring Rooney and Kate Mara as preternaturally close twins, drew reactions that ranged from delighted appreciation to pure bewilderment. The film doesn’t have American distribution yet, though, so it’s still TBD on whether it’s entering the awards race this year."
+    },
+    {
+     "tag": "p",
+     "html": "Robert Pattinson’s performance as <em>To Catch a Predator</em> host Chris Hansen in director Lance Oppenheim’s <a href=\"https://www.vulture.com/article/primetime-review-only-robert-pattinson-could-pull-this-off.html\"><em>Primetime</em></a> was widely praised, though the film itself was more divisive. And now that <em>You Can See Everything</em>, the film that Oppenheim co-directed with Nathan Fielder, has become the top talk of the festival circuit, <em>Primetime</em> is starting to look a bit more like a backbencher."
+    },
+    {
+     "tag": "p",
+     "html": "It was worse news for Javier Bardem and Penélope Cruz, the real-life married Oscar winners whose new film <em>Bunker</em> got savaged by the critics in Venice. The film’s director, Florian Zeller, has perhaps exhausted the goodwill afforded to him after the Oscar-winning run for 2020’s <em>The Father</em>. The follow-up film, <em>The Son</em>, flopped hard in 2022. And now <em>Bunker</em>, about a prestigious architect (Bardem) who is tasked with building a doomsday bunker for a corrupt billionaire, which Ebiri called “<a href=\"https://www.vulture.com/article/review-bunker-is-a-crushing-disappointment.html\">a cliché-riddled bit of tedium</a>,” stands at a lowly 50 on the Metacritic scale. Bardem and Cruz should still be fine, considering she’s in two other Oscar contenders (<em>La Bola Negra</em> and <em>The Invite</em>), and he’s in <em>Dune: Part Three</em>. They may be the only ones who survive the doomsday of <em>Bunker</em>."
+    }
+   ]
   }
  ],
  "members": {

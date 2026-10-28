@@ -183,6 +183,77 @@ h3 {
     font-size: 0.8rem;
 }
 
+details.newsletter {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+details.newsletter summary {
+    cursor: pointer;
+    padding: 10px 14px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    font-size: 0.95rem;
+}
+
+details.newsletter summary::-webkit-details-marker {
+    display: none;
+}
+
+details.newsletter summary::before {
+    content: "▸";
+    color: var(--gold);
+    font-size: 0.8rem;
+    flex: none;
+    transition: transform 0.15s;
+}
+
+details.newsletter[open] summary::before {
+    transform: rotate(90deg);
+}
+
+details.newsletter summary .when {
+    color: var(--muted);
+    font-size: 0.8rem;
+    min-width: 92px;
+    flex: none;
+    font-variant-numeric: tabular-nums;
+}
+
+details.newsletter summary .title {
+    font-weight: 600;
+}
+
+details.newsletter summary:hover .title {
+    color: var(--gold);
+}
+
+details.newsletter .body {
+    padding: 4px 18px 14px;
+    border-top: 1px solid var(--line);
+    font-size: 0.95rem;
+}
+
+details.newsletter .body p {
+    margin-top: 10px;
+}
+
+details.newsletter .body h2 {
+    font-size: 1rem;
+    border-bottom: none;
+    margin: 18px 0 0;
+    padding-bottom: 0;
+}
+
+details.newsletter .body .attribution {
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
 ul.articles {
     list-style: none;
 }
