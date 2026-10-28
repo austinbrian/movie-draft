@@ -30,5 +30,73 @@
    "Whalefall": 8,
    "You Can See Everything": 15
   }
+ },
+ {
+  "key": "October 28, 2026",
+  "date": "2026-10-28",
+  "teams": {
+   "Other Mommy Can See Everything": {
+    "score": 216,
+    "rank": 2550
+   },
+   "Ya Odyssey These Movies": {
+    "score": 206,
+    "rank": 3175
+   },
+   "BuiltFjordTough": {
+    "score": 190,
+    "rank": 4416
+   },
+   "Rob Pattinson Freaky Little Accents": {
+    "score": 140,
+    "rank": 10759
+   }
+  },
+  "movies": {
+   "A Fox Under a Pink Moon": 10,
+   "All of a Sudden": 50,
+   "Artificial": 15,
+   "Backrooms": 10,
+   "Blue Heron": 20,
+   "Clarissa": 50,
+   "Clayface": 44,
+   "Closure": 10,
+   "Club Kid": 25,
+   "Digger": 17,
+   "Elsinore": 15,
+   "Fatherland": 25,
+   "Is God Is": 10,
+   "Josephine": 40,
+   "La Bola Negra": 20,
+   "La Gradiva": 40,
+   "Michael": 10,
+   "Minotaur": 35,
+   "NAZA": 11,
+   "Obsession": 10,
+   "Once Upon a Time in Harlem": 10,
+   "Other Mommy": 96,
+   "Paper Tiger": 30,
+   "Possible Love": 35,
+   "Primetime": 40,
+   "Project Hail Mary": 10,
+   "Queen at Sea": 15,
+   "Sense and Sensibility": 28,
+   "Street Fighter": 76,
+   "Teenage Sex and Death at Camp Miasma": 45,
+   "Tender Loving Care": 50,
+   "The Christophers": 15,
+   "The Debut": 30,
+   "The Drama": 10,
+   "The Invite": 50,
+   "The Only Living Pickpocket in New York": 15,
+   "The Social Reckoning": 9,
+   "Verity": 116,
+   "Whalefall": 13,
+   "Wicker": 5,
+   "Wild Horse Nine": 25,
+   "Wildwood": 12,
+   "You Can See Everything": 75,
+   "Your Mother, Your Mother, Your Mother": 40
+  }
  }
 ]
