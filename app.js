@@ -148,10 +148,6 @@ function renderChart(members, history) {
     }
     wrap.replaceChildren(svg);
 
-    const derivedWeeks = entries.filter((e) => e.source);
-    if (derivedWeeks.length) {
-        $('#chart-note').textContent = `Running totals from each Tuesday leaderboard. Hollow points (${derivedWeeks.map((e) => fmtDate(e.published)).join(', ')}) are reconstructed from the per-movie points Vulture reported that week, so ranks are unknown; weeks with no point were not captured.`;
-    }
 }
 
 function renderNews(snapshot) {
