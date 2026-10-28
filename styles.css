@@ -163,6 +163,60 @@ h3 {
 .delta.up { color: var(--green); }
 .delta.flat { color: var(--muted); }
 
+/* This week */
+.recap {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--gold);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+}
+
+.recap p + p {
+    margin-top: 10px;
+}
+
+.recap .attribution {
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+ul.articles {
+    list-style: none;
+}
+
+ul.articles li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.92rem;
+}
+
+ul.articles li:last-child {
+    border-bottom: none;
+}
+
+ul.articles .when {
+    display: inline-block;
+    min-width: 92px;
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-variant-numeric: tabular-nums;
+}
+
+ul.articles .teaser {
+    display: block;
+    margin-left: 92px;
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+
+@media (max-width: 600px) {
+    ul.articles .when { display: block; min-width: 0; }
+    ul.articles .teaser { margin-left: 0; }
+}
+
 /* Rosters */
 .rosters {
     display: grid;

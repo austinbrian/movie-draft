@@ -1,10 +1,71 @@
 {
- "fetchedAt": "2026-10-28T00:50:04+00:00",
+ "fetchedAt": "2026-10-28T01:10:14+00:00",
  "leaderboardUpdated": "October 20, 2026",
  "leaderboardUrl": "https://www.vulture.com/static/leaderboard/production/cmuec30my000h3b7egrtm2p6h.json",
  "totalTeams": 30224,
  "topScore": 286,
  "fitMismatches": 0,
+ "recap": [
+  "From all the chatter, you’d think <em>You Can See Everything</em> had dominated the box-office charts. But the weekend’s winner was actually <strong><em>Street Fighter</em></strong>, which opened to $31 million. Factoring in the ten bonus points for clearing $20 million and the extra 20 points for topping the weekend box office, <em>Street Fighter</em> kicks off its MFL campaign with 61 points. But the story here really is <strong><em>You Can See Everything</em></strong>, which debuted to $15 million dollars. It was the best opening for a documentary in 13 years (since the One Direction concert movie <em>This Is Us</em>), the biggest opening weekend on fewer than 1,000 screens in 20 years (since <em>Borat</em>), and A24’s fifth-best opening weekend of all time, ranking behind <em>Backrooms</em>, <em>Civil War</em>, <em>Primetime</em>, and <em>Marty Supreme</em>. Nathan Fielder and Lance Oppenheim’s film is already overperforming its $3 price tag and looks poised to be one of the best-value movies of the MFL season."
+ ],
+ "articles": [
+  {
+   "url": "https://www.vulture.com/article/movies-fantasy-league-draft-guide.html",
+   "title": "Every Film You Can Draft in the 2026–27 Movies Fantasy League",
+   "date": "Oct. 27, 2026",
+   "teaser": "All the info you need to spend your fake money wisely.",
+   "newsletter": false
+  },
+  {
+   "url": "https://www.vulture.com/article/movies-fantasy-league-winning-roster-without-the-odyssey.html",
+   "title": "How to Win the Movies Fantasy League Without <em>The Odyssey</em>",
+   "date": "Oct. 15, 2026",
+   "teaser": "There’s more than one way to build a competitive roster.",
+   "newsletter": false
+  },
+  {
+   "url": "https://www.vulture.com/article/mfl-newsletter-week-one-verity-box-office.html",
+   "title": "<em>Verity</em> Pickers Surge to the Top in the First Week of MFL Scoring",
+   "date": "Oct. 6, 2026",
+   "teaser": "And then there’s the feels-like-being-trapped-inside-a-tuba <em>Digger</em>.",
+   "newsletter": true
+  },
+  {
+   "url": "https://www.vulture.com/article/vulture-movie-fantasy-league-staff-picks.html",
+   "title": "Vulture Writers Show How (or How <em>Not</em>) to Draft Your Movies Fantasy League Team",
+   "date": "Sept. 30, 2026",
+   "teaser": "Our first Roster Roundtable hits on all the big questions: <em>The Odyssey</em> vs. <em>Avengers: Doomsday</em>? <em>Obsession</em> vs. <em>The Debut</em>? Who’s going to win Best Actor?",
+   "newsletter": false
+  },
+  {
+   "url": "https://www.vulture.com/article/new-york-film-festival-2026-movies-lineup-questions-oscars.html",
+   "title": "5 Big Awards-Season Story Lines to Follow During the New York Film Festival",
+   "date": "Sept. 25, 2026",
+   "teaser": "With less than one week left to draft in the Movies Fantasy League.",
+   "newsletter": false
+  },
+  {
+   "url": "https://www.vulture.com/article/movies-fantasy-league-mini-leagues-guide.html",
+   "title": "A Guide to MFL Mini-Leagues",
+   "date": "Sept. 15, 2026",
+   "teaser": "How to compete against friends, podcast fans, and Letterboxd stalwarts.",
+   "newsletter": false
+  },
+  {
+   "url": "https://www.vulture.com/article/mfl-mini-league-correction-form.html",
+   "title": "How to Get Yourself in the Right MFL Mini-League",
+   "date": "Sept. 15, 2026",
+   "teaser": "It’s never too late to compete directly against your friends in a dedicated mini-league.",
+   "newsletter": false
+  },
+  {
+   "url": "https://www.vulture.com/article/venice-wrap-up-woman-unknown-mfl-newsletter.html",
+   "title": "Venice Wrap-Up: <em>Woman Unknown</em> Enters the Oscar Race",
+   "date": "Sept. 15, 2026",
+   "teaser": "Venice was a showcase for career-best performances — the Best Actor race is heating up.",
+   "newsletter": true
+  }
+ ],
  "members": {
   "Other Mommy Can See Everything": {
    "team": "Other Mommy Can See Everything",

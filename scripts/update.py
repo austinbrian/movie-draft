@@ -53,6 +53,65 @@ def find_leaderboard(hub_html: str) -> tuple[str, str | None]:
     return m.group(0), updated
 
 
+TAG_URL = "https://www.vulture.com/tags/movies-fantasy-league/"
+KEEP_TAGS = re.compile(r"</?(em|strong|i|b)>|<a [^>]*href=\"[^\"]+\"[^>]*>|</a>")
+
+
+def clean_html(fragment: str) -> str:
+    """Keep only emphasis and links from a Vulture paragraph; drop everything else."""
+    out, pos = [], 0
+    for m in re.finditer(r"<[^>]+>", fragment):
+        out.append(fragment[pos:m.start()])
+        tag = m.group(0)
+        if KEEP_TAGS.fullmatch(tag):
+            if tag.startswith("<a "):
+                href = re.search(r'href="([^"]+)"', tag).group(1)
+                tag = f'<a href="{href}">'
+            out.append(tag)
+        pos = m.end()
+    out.append(fragment[pos:])
+    return re.sub(r"\s+", " ", "".join(out)).strip()
+
+
+def hub_recap(hub_html: str) -> list[str]:
+    """The weekly write-up at the top of the hub page: the paragraphs between the
+    in-page nav and the 'Draft Your Team' button, which Vulture replaces each week."""
+    start = hub_html.find('<li><a href="#faq">')
+    end = hub_html.find('data-vars-anchor-text="Draft Your Team"', start)
+    if start < 0 or end < 0:
+        return []
+    paras = re.findall(r'<p class="clay-paragraph"[^>]*>(.*?)</p>', hub_html[start:end], re.S)
+    return [p for p in (clean_html(p) for p in paras) if p]
+
+
+def recent_articles(limit: int = 8) -> list[dict]:
+    """Latest MFL-tagged articles, which is where the weekly newsletter gets republished."""
+    html = fetch(TAG_URL).decode("utf-8", "replace")
+    items = []
+    for block in re.findall(r'<li\s+class="article "(.*?)</li>', html, re.S):
+        link = re.search(r'<a href="(https://www\.vulture\.com/article/[^"]+)" class="link-text"><span class="headline">(.*?)</span></a>', block, re.S)
+        if not link:
+            continue
+        when = re.search(r'<time class="paginate-time">([^<]+)</time>', block)
+        # Same-day articles show a clock time ("5:00 p.m.") rather than a date.
+        if when and not re.search(r"\d{4}", when.group(1)):
+            when = None
+            label = date.today().strftime("%b. %-d, %Y")
+        else:
+            label = when.group(1).strip() if when else None
+        teaser = re.search(r'<span class="teaser">(.*?)</span>', block, re.S)
+        items.append({
+            "url": link.group(1),
+            "title": clean_html(link.group(2)),
+            "date": label,
+            "teaser": clean_html(teaser.group(1)) if teaser else "",
+            "newsletter": "mfl-newsletter" in link.group(1) or "newsletter" in link.group(1),
+        })
+        if len(items) >= limit:
+            break
+    return items
+
+
 def comma_titles(rows: list[dict]) -> set[str]:
     """Titles that contain commas, learned from the rows where Vulture quoted them."""
     found = set()
@@ -141,6 +200,12 @@ def main() -> None:
     hub_html = fetch(HUB_URL).decode("utf-8", "replace")
     lb_url, updated_label = find_leaderboard(hub_html)
     raw = json.loads(fetch(lb_url))
+    recap = hub_recap(hub_html)
+    try:
+        articles = recent_articles()
+    except Exception as exc:  # the news list is a nicety; never block the leaderboard on it
+        print(f"warning: could not fetch articles: {exc}", file=sys.stderr)
+        articles = []
 
     known = comma_titles(raw)
     teams = []
@@ -191,6 +256,8 @@ def main() -> None:
         "totalTeams": total_teams,
         "topScore": max(t["score"] for t in teams),
         "fitMismatches": mismatches,
+        "recap": recap,
+        "articles": articles,
         "members": members,
         "officialLeague": official,
         "movies": {

@@ -77,6 +77,29 @@ function renderStandings(members, snapshot, history) {
     $('#standings-cards').replaceChildren(...cards);
 }
 
+function renderNews(snapshot) {
+    const recap = $('#recap');
+    if (snapshot.recap?.length) {
+        // Paragraphs come from Vulture's hub page, reduced to text plus em/strong/a by the updater.
+        recap.innerHTML = snapshot.recap.map((p) => `<p>${p}</p>`).join('');
+        recap.append(el('p', { class: 'attribution' }, '— from the MFL hub page, ', el('a', { href: 'https://www.vulture.com/movies-league/' }, 'vulture.com/movies-league')));
+    } else {
+        recap.replaceChildren(el('p', { class: 'note' }, 'No recap found on the hub page this week.'));
+    }
+    const items = (snapshot.articles || []).map((a) => {
+        const li = el('li', {},
+            el('span', { class: 'when' }, a.date || ''),
+            el('a', { href: a.url }),
+            a.newsletter ? el('span', { class: 'tag' }, 'newsletter') : null,
+            a.teaser ? el('span', { class: 'teaser' }) : null);
+        // Title and teaser are Vulture's own markup, reduced to em/strong/a by the updater.
+        li.querySelector('a').innerHTML = a.title;
+        if (a.teaser) li.querySelector('.teaser').innerHTML = a.teaser;
+        return li;
+    });
+    $('#articles').replaceChildren(...items);
+}
+
 function renderRosters(members, snapshot, prices) {
     const cards = members.map((m) => {
         const t = snapshot.members[m.team];
@@ -220,6 +243,7 @@ async function main() {
         members.sort((a, b) => (snapshot.members[b.team]?.score ?? -1) - (snapshot.members[a.team]?.score ?? -1));
         renderMeta(snapshot, league);
         renderStandings(members, snapshot, history);
+        renderNews(snapshot);
         renderRosters(members, snapshot, prices);
         renderLeague(members, snapshot, league);
         renderMovies(members, snapshot, prices);
