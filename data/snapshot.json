@@ -1,51 +1,11 @@
 {
- "fetchedAt": "2026-10-28T00:31:28+00:00",
+ "fetchedAt": "2026-10-28T00:34:55+00:00",
  "leaderboardUpdated": "October 20, 2026",
  "leaderboardUrl": "https://www.vulture.com/static/leaderboard/production/cmuec30my000h3b7egrtm2p6h.json",
  "totalTeams": 30224,
  "topScore": 286,
  "fitMismatches": 0,
  "members": {
-  "How to Rob a Pattinson": {
-   "team": "How to Rob a Pattinson",
-   "league": "letterboxd",
-   "score": 200,
-   "rank": 72,
-   "roster": [
-    {
-     "title": "Avengers: Doomsday",
-     "points": 0
-    },
-    {
-     "title": "La Bola Negra",
-     "points": 0
-    },
-    {
-     "title": "Focker-in-Law",
-     "points": 0
-    },
-    {
-     "title": "Verity",
-     "points": 111
-    },
-    {
-     "title": "The Debut",
-     "points": 0
-    },
-    {
-     "title": "Other Mommy",
-     "points": 74
-    },
-    {
-     "title": "Madden",
-     "points": 0
-    },
-    {
-     "title": "You Can See Everything",
-     "points": 15
-    }
-   ]
-  },
   "Other Mommy Can See Everything": {
    "team": "Other Mommy Can See Everything",
    "league": "dc movie club",
@@ -122,6 +82,46 @@
     },
     {
      "title": "Madden",
+     "points": 0
+    }
+   ]
+  },
+  "Rob Pattinson Freaky Little Accents": {
+   "team": "Rob Pattinson Freaky Little Accents",
+   "league": "dc movie club",
+   "score": 15,
+   "rank": 8190,
+   "roster": [
+    {
+     "title": "The Odyssey",
+     "points": 0
+    },
+    {
+     "title": "The Hunger Games: Sunrise on the Reaping",
+     "points": 0
+    },
+    {
+     "title": "Elsinore",
+     "points": 0
+    },
+    {
+     "title": "Club Kid",
+     "points": 0
+    },
+    {
+     "title": "Coyote vs. ACME",
+     "points": 0
+    },
+    {
+     "title": "You Can See Everything",
+     "points": 15
+    },
+    {
+     "title": "The Only Living Pickpocket in New York",
+     "points": 0
+    },
+    {
+     "title": "Backrooms",
      "points": 0
     }
    ]

@@ -10,9 +10,9 @@ worth by solving the system "sum of a team's eight movies = team score" across a
 ~30k teams. Scoring is additive by movie, so the fit is exact; `fitMismatches` in
 `snapshot.json` says how many teams it failed to reproduce (it should be 0).
 
-Our mini-league name, `dc movie club`, was also used by an unrelated group, and Jess
-registered under `letterboxd`, so membership is by team name in `data/league.json`,
-not by Vulture's league filter. The official mini-league is still shown for context.
+Our mini-league name, `dc movie club`, was also used by an unrelated group, so membership
+is by team name in `data/league.json`, not by Vulture's league filter. The official
+mini-league is still shown for context, with the other group tagged.
 
 ## Files
 

@@ -3,12 +3,24 @@
   "season": "2026–27 (Vulture MFL Season 6)",
   "seasonEnds": "2027-03-14",
   "officialLeague": "dc movie club",
-  "officialLeagueNote": "Another group registered under the same mini-league name, so Vulture's filter mixes us together. Jess registered in the letterboxd league instead. Membership here is by team name.",
+  "officialLeagueNote": "Another group registered under the same mini-league name, so Vulture's filter mixes us together. Membership here is by team name.",
   "members": [
-    { "name": "Brian", "team": "Ya Odyssey These Movies" },
-    { "name": "Jess", "team": "How to Rob a Pattinson" },
-    { "name": "Emily", "team": "Other Mommy Can See Everything" },
-    { "name": "Kevin", "team": "BuiltFjordTough" }
+    {
+      "name": "Brian",
+      "team": "Ya Odyssey These Movies"
+    },
+    {
+      "name": "Jess",
+      "team": "Rob Pattinson Freaky Little Accents"
+    },
+    {
+      "name": "Emily",
+      "team": "Other Mommy Can See Everything"
+    },
+    {
+      "name": "Kevin",
+      "team": "BuiltFjordTough"
+    }
   ],
   "links": {
     "hub": "https://www.vulture.com/movies-league/",
