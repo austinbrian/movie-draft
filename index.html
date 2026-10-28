@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DC Movie Club</title>
+    <meta name="description" content="Standings, rosters and per-movie points for our Vulture Movies Fantasy League teams, mirrored from the official leaderboard.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DC Movie Club</h1>
+        <p class="subtitle" id="season">Vulture Movies Fantasy League</p>
+    </header>
+
+    <p class="meta" id="meta">Loading the leaderboard…</p>
+
+    <nav class="sections">
+        <a href="#standings">Standings</a>
+        <a href="#rosters">Rosters</a>
+        <a href="#league">Official mini-league</a>
+        <a href="#movies">Movies</a>
+        <a href="#rules">Scoring</a>
+    </nav>
+
+    <main>
+        <section id="standings">
+            <h2>Standings</h2>
+            <div class="standings" id="standings-cards"></div>
+        </section>
+
+        <section id="rosters">
+            <h2>Rosters</h2>
+            <p class="note">Points per movie are worked out from the official leaderboard: every team's score is the sum of its eight movies, and with 30,000 teams that sum pins down each movie exactly. Price is what the movie cost in the draft.</p>
+            <div class="rosters" id="roster-cards"></div>
+        </section>
+
+        <section id="league">
+            <h2>Official <em>dc movie club</em> mini-league</h2>
+            <p class="note" id="league-note"></p>
+            <div class="table-wrap">
+                <table id="league-table">
+                    <thead>
+                        <tr><th class="num">#</th><th>Team</th><th class="num">Overall</th><th class="num">Score</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="movies">
+            <h2>Movies</h2>
+            <div class="controls">
+                <input type="search" id="movie-search" placeholder="Filter titles…" aria-label="Filter titles">
+                <label><input type="checkbox" id="only-ours" checked> only movies we drafted</label>
+                <label><input type="checkbox" id="only-scoring"> only movies with points</label>
+            </div>
+            <div class="table-wrap">
+                <table id="movie-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Drafted by</th>
+                            <th class="num">Price</th>
+                            <th class="num">Points</th>
+                            <th class="num">Pts / $</th>
+                            <th class="num">Teams</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="rules">
+            <h2>Scoring</h2>
+            <ul class="basics" id="rules-basics"></ul>
+            <div class="rules-grid" id="rules-grid"></div>
+            <h3>Awards calendar</h3>
+            <div class="table-wrap">
+                <table class="awards" id="awards-table">
+                    <thead>
+                        <tr><th>Date</th><th>Event</th><th>Points</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

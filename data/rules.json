@@ -1,0 +1,162 @@
+{
+  "source": "https://www.vulture.com/movies-league/",
+  "note": "Scoring tables as published on the MFL hub page (Season 6). The legal rules at nymag.com list different box-office bonus amounts at $50M–$175M (10/20/10/25/10/20/10) that sum to the same 130; the hub page is what the leaderboard appears to follow.",
+  "basics": [
+    "Eight movies released in 2026, bought with a $100 fake budget. Rosters lock on submission.",
+    "Scoring started October 2, 2026. Movies that opened before then earn no box-office points.",
+    "Leaderboard updates Tuesdays around noon ET. Season ends with the Oscars on March 14, 2027."
+  ],
+  "boxOffice": {
+    "basis": "Domestic gross per Box Office Mojo",
+    "perMillion": 1,
+    "bonuses": [
+      { "threshold": 25, "points": 10 },
+      { "threshold": 50, "points": 15 },
+      { "threshold": 75, "points": 15 },
+      { "threshold": 100, "points": 20 },
+      { "threshold": 125, "points": 15 },
+      { "threshold": 150, "points": 15 },
+      { "threshold": 175, "points": 15 },
+      { "threshold": 200, "points": 25 }
+    ],
+    "numberOnePerWeek": 20
+  },
+  "metacritic": {
+    "awardedOn": "2027-01-04",
+    "note": "Awarded once, not adjusted afterward. Only released movies with a Metascore qualify.",
+    "bands": [
+      { "range": "0–19", "points": -10 },
+      { "range": "20–39", "points": -5 },
+      { "range": "40–49", "points": 0 },
+      { "range": "50–59", "points": 10 },
+      { "range": "60–69", "points": 20 },
+      { "range": "70–79", "points": 40 },
+      { "range": "80–89", "points": 70 },
+      { "range": "90–100", "points": 100 }
+    ]
+  },
+  "letterboxd": {
+    "awardedOn": "2027-03-01",
+    "note": "Average star rating on the film's Letterboxd page. Awarded once, not adjusted afterward.",
+    "bands": [
+      { "range": "0.0–0.9", "points": -10 },
+      { "range": "1.0–1.9", "points": -5 },
+      { "range": "2.0–2.4", "points": 0 },
+      { "range": "2.5–2.9", "points": 10 },
+      { "range": "3.0–3.4", "points": 40 },
+      { "range": "3.5–3.9", "points": 70 },
+      { "range": "4.0–5.0", "points": 100 }
+    ]
+  },
+  "awards": [
+    { "event": "Gotham Awards Nominations", "date": "2026-10-27", "kind": "nominations", "tiers": [
+      { "points": 15, "categories": "Best Feature, Best Director, Outstanding Lead Performance, Outstanding Supporting Performance" },
+      { "points": 10, "categories": "Best Screenplay, Breakthrough Director, Breakthrough Performer, Documentary Feature, International Feature" }
+    ]},
+    { "event": "AARP Movies for Grownups Nominations", "date": null, "kind": "nominations", "tiers": [
+      { "points": 10, "categories": "Best Movie for Grownups" },
+      { "points": 5, "categories": "Any other category" }
+    ]},
+    { "event": "Gotham Awards", "date": "2026-11-30", "kind": "wins", "tiers": [
+      { "points": 25, "categories": "Best Feature, Best Director, Outstanding Lead Performance, Outstanding Supporting Performance" },
+      { "points": 15, "categories": "Best Screenplay, Breakthrough Director, Breakthrough Performer, Documentary Feature, International Feature, Special Category (e.g. Ensemble)" }
+    ]},
+    { "event": "Film Independent Spirit Awards Nominations", "date": "2026-12-02", "kind": "nominations", "tiers": [
+      { "points": 15, "categories": "Best Feature, Best Director, Best Lead Performance, Best Supporting Performance, Best Breakthrough Performance, Best Screenplay" },
+      { "points": 5, "categories": "First Feature, First Screenplay, Documentary Feature, International Feature, Cinematography, Editing, John Cassavetes Award" }
+    ]},
+    { "event": "Golden Globe Nominations", "date": "2026-12-04", "kind": "nominations", "tiers": [
+      { "points": 20, "categories": "Best Picture (Drama or Musical/Comedy)" },
+      { "points": 15, "categories": "Cinematic and Box Office Achievement, Director, Actor/Actress (Drama and Musical/Comedy), Supporting Actor/Actress, Screenplay, Foreign Film, Animated Feature, Score, Song" }
+    ]},
+    { "event": "Critics' Choice Nominations", "date": "2026-12-07", "kind": "nominations", "tiers": [
+      { "points": 15, "categories": "Picture, Director, Actor, Actress, Supporting Actor, Supporting Actress, Original Screenplay, Adapted Screenplay" },
+      { "points": 5, "categories": "Young Actor/Actress, Ensemble, Cinematography, Editing, Costume, Production Design, Score, Song, Sound, Hair/Makeup, VFX, Animated, Comedy, Foreign-Language, Stunt Design" }
+    ]},
+    { "event": "PGA Documentary Nominations", "date": "2026-12-11", "kind": "nominations", "tiers": [
+      { "points": 15, "categories": "Any category" }
+    ]},
+    { "event": "Oscar Shortlists", "date": "2026-12-15", "kind": "shortlist", "tiers": [
+      { "points": 5, "categories": "Placement on any shortlist" }
+    ]},
+    { "event": "National Society of Film Critics", "date": "2027-01-02", "kind": "wins", "tiers": [
+      { "points": 20, "categories": "Best Picture" },
+      { "points": 10, "categories": "Director, Actor, Actress, Supporting Actor, Supporting Actress, Screenplay, Cinematography" }
+    ]},
+    { "event": "Critics' Choice Awards", "date": "2027-01-03", "kind": "wins", "tiers": [
+      { "points": 25, "categories": "Picture, Director, Actor, Actress, Supporting Actor, Supporting Actress, Original Screenplay, Adapted Screenplay" },
+      { "points": 10, "categories": "All other categories" }
+    ]},
+    { "event": "Actor Awards (SAG) Nominations", "date": "2027-01-06", "kind": "nominations", "tiers": [
+      { "points": 25, "categories": "Best Ensemble Cast" },
+      { "points": 20, "categories": "Male/Female Actor, Supporting Male/Female Actor" },
+      { "points": 5, "categories": "Any other category" }
+    ]},
+    { "event": "DGA Nominations", "date": "2027-01-07", "kind": "nominations", "tiers": [
+      { "points": 15, "categories": "Any category" }
+    ]},
+    { "event": "PGA Nominations", "date": "2027-01-08", "kind": "nominations", "tiers": [
+      { "points": 15, "categories": "Any category" }
+    ]},
+    { "event": "WGA Nominations", "date": "2027-01-08", "kind": "nominations", "tiers": [
+      { "points": 10, "categories": "Any category" }
+    ]},
+    { "event": "Golden Globes", "date": "2027-01-10", "kind": "wins", "tiers": [
+      { "points": 35, "categories": "Best Picture" },
+      { "points": 25, "categories": "Every other listed category" }
+    ]},
+    { "event": "BAFTA Nominations", "date": "2027-01-19", "kind": "nominations", "tiers": [
+      { "points": 20, "categories": "Picture, Director, Actor, Actress, Supporting Actor, Supporting Actress, Original Screenplay, Adapted Screenplay" },
+      { "points": 10, "categories": "British Film, British Debut, Animated, Documentary, Not in English, Casting, Children's & Family, Cinematography, Editing, Costume, Production Design, Score, Hair/Makeup, VFX, Sound" }
+    ]},
+    { "event": "Oscar Nominations", "date": "2027-01-21", "kind": "nominations", "tiers": [
+      { "points": 50, "categories": "Best Picture" },
+      { "points": 25, "categories": "Director, Actor, Actress, Supporting Actor, Supporting Actress, Original Screenplay, Adapted Screenplay, Animated Feature, Documentary Feature, International Feature" },
+      { "points": 15, "categories": "Cinematography, Costume, Production Design, Hair/Makeup, Sound, VFX, Editing, Song, Score, Casting" }
+    ]},
+    { "event": "DGA Awards", "date": "2027-01-30", "kind": "wins", "tiers": [
+      { "points": 30, "categories": "Any category" }
+    ]},
+    { "event": "WGA Awards", "date": "2027-02-13", "kind": "wins", "tiers": [
+      { "points": 20, "categories": "Any category" }
+    ]},
+    { "event": "BAFTA Awards", "date": "2027-02-21", "kind": "wins", "tiers": [
+      { "points": 35, "categories": "Picture, Director, Actor, Actress, Supporting Actor, Supporting Actress, Original Screenplay, Adapted Screenplay" },
+      { "points": 20, "categories": "All other listed categories" }
+    ]},
+    { "event": "PGA Awards", "date": "2027-02-27", "kind": "wins", "tiers": [
+      { "points": 30, "categories": "Any category" }
+    ]},
+    { "event": "Actor Awards (SAG)", "date": "2027-02-28", "kind": "wins", "tiers": [
+      { "points": 50, "categories": "Best Ensemble Cast" },
+      { "points": 35, "categories": "Male/Female Actor, Supporting Male/Female Actor" },
+      { "points": 10, "categories": "Any other category" }
+    ]},
+    { "event": "Film Independent Spirit Awards", "date": "2027-03-06", "kind": "wins", "tiers": [
+      { "points": 25, "categories": "Best Feature, Director, Lead Performance, Supporting Performance, Breakthrough Performance, Screenplay" },
+      { "points": 10, "categories": "First Feature, First Screenplay, Documentary, International, Cinematography, Editing, Cassavetes, Altman" }
+    ]},
+    { "event": "The Oscars", "date": "2027-03-14", "kind": "wins", "tiers": [
+      { "points": 100, "categories": "Best Picture" },
+      { "points": 75, "categories": "Director, Actor, Actress, Supporting Actor, Supporting Actress, Original Screenplay, Adapted Screenplay, Animated Feature, Documentary Feature, International Feature" },
+      { "points": 50, "categories": "Cinematography, Costume, Production Design, Hair/Makeup, Sound, VFX, Editing, Song, Score, Casting" }
+    ]},
+    { "event": "New York Film Critics Circle", "date": null, "kind": "wins", "tiers": [
+      { "points": 20, "categories": "Best Film" },
+      { "points": 10, "categories": "Director, Actor, Actress, Supporting Actor, Supporting Actress, Screenplay, Animated, Cinematography, Nonfiction, Foreign-Language, First Film" }
+    ]},
+    { "event": "Los Angeles Film Critics Association", "date": null, "kind": "wins", "tiers": [
+      { "points": 20, "categories": "Best Film" },
+      { "points": 10, "categories": "Director, Lead/Supporting Performance, Screenplay, Animated, Breakthrough, Directorial Debut, Foreign-Language, Documentary, Ensemble, Cinematography" }
+    ]},
+    { "event": "National Board of Review", "date": null, "kind": "wins", "tiers": [
+      { "points": 20, "categories": "Best Film" },
+      { "points": 15, "categories": "Top 10 Best Films list" },
+      { "points": 10, "categories": "All other listed categories, including Top 5 Foreign, Top 5 Documentaries, Top 10 Independent" }
+    ]},
+    { "event": "AARP Movies for Grownups Awards", "date": null, "kind": "wins", "tiers": [
+      { "points": 20, "categories": "Best Movie for Grownups" },
+      { "points": 10, "categories": "Any other category" }
+    ]}
+  ]
+}

@@ -1,0 +1,394 @@
+:root {
+    --bg: #0d0d0d;
+    --panel: #161616;
+    --panel-2: #1e1e1e;
+    --line: #2a2a2a;
+    --text: #e0e0e0;
+    --muted: #888;
+    --gold: #d4af37;
+    --green: #6fcf97;
+    --red: #eb5757;
+    --brian: #d4af37;
+    --jess: #56ccf2;
+    --emily: #bb6bd9;
+    --kevin: #6fcf97;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 16px;
+    line-height: 1.45;
+}
+
+a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    padding: 24px 0 8px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--gold);
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+.meta {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin: 8px 0 20px;
+}
+
+.meta .warn {
+    color: var(--red);
+}
+
+nav.sections {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px 18px;
+    margin-bottom: 24px;
+    font-size: 0.9rem;
+}
+
+nav.sections a {
+    color: var(--muted);
+}
+
+nav.sections a:hover {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.25rem;
+    color: var(--gold);
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+}
+
+h3 {
+    font-size: 1rem;
+    margin: 18px 0 8px;
+}
+
+.note {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+/* Standings cards */
+.standings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.card, .roster, .rules-grid > * {
+    min-width: 0;
+}
+
+.card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent, var(--gold));
+    border-radius: 8px;
+    padding: 14px 16px;
+}
+
+.card .who {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent, var(--gold));
+}
+
+.card .team {
+    font-weight: 600;
+    margin: 2px 0 8px;
+}
+
+.card .score {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.card .rank {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 6px;
+}
+
+.card .delta {
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+.delta.up { color: var(--green); }
+.delta.flat { color: var(--muted); }
+
+/* Rosters */
+.rosters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.roster {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.roster .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 14px;
+    background: var(--panel-2);
+    border-bottom: 2px solid var(--accent, var(--gold));
+}
+
+.roster .head .who {
+    color: var(--accent, var(--gold));
+    font-weight: 600;
+}
+
+.roster .head .team {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-left: 8px;
+}
+
+.roster .head .total {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+td, th {
+    padding: 7px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+}
+
+th {
+    color: var(--muted);
+    font-weight: 500;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td.num, th.num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+td.pts {
+    font-weight: 600;
+}
+
+td.pts.zero {
+    color: var(--muted);
+    font-weight: 400;
+}
+
+td.pts.neg {
+    color: var(--red);
+}
+
+.price {
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: var(--panel-2);
+    color: var(--muted);
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+.tag.nobo {
+    border: 1px solid #444;
+}
+
+.tag.shared {
+    background: #2b2416;
+    color: var(--gold);
+}
+
+.tag.us {
+    background: var(--accent, var(--gold));
+    color: #000;
+    font-weight: 600;
+}
+
+tr.footer td {
+    color: var(--muted);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--line);
+}
+
+/* Movie table */
+.table-wrap {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.owners {
+    display: inline-flex;
+    gap: 4px;
+    vertical-align: middle;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.controls label {
+    cursor: pointer;
+}
+
+.controls input[type="search"] {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    color: var(--text);
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+/* Rules */
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.rules-grid .table-wrap {
+    align-self: start;
+}
+
+.rules-grid caption {
+    text-align: left;
+    padding: 10px 14px 4px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.rules-grid .sub {
+    display: block;
+    color: var(--muted);
+    font-size: 0.78rem;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+.awards td.when {
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+.awards td.cats {
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+
+.awards tr.past td {
+    opacity: 0.55;
+}
+
+.awards tr.next td {
+    background: #1a1810;
+}
+
+ul.basics {
+    padding-left: 18px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+
+footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    padding: 24px 0 40px;
+    border-top: 1px solid var(--line);
+}
+
+@media (max-width: 600px) {
+    header h1 { font-size: 1.5rem; }
+    td, th { padding: 6px 10px; }
+    .card .score { font-size: 1.8rem; }
+}
