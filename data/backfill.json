@@ -7,5 +7,16 @@
    "Verity": 62,
    "Digger": 8
   }
+ },
+ {
+  "label": "October 13, 2026",
+  "published": "2026-10-13",
+  "source": "Per-movie points from the Oct. 13 MFL newsletter (emailed): only Verity 98, Other Mommy 57, Digger 14 and The Social Reckoning 5 had scored; the five leading teams at 174 = their sum. Team totals computed from rosters.",
+  "movies": {
+   "Verity": 98,
+   "Other Mommy": 57,
+   "Digger": 14,
+   "The Social Reckoning": 5
+  }
  }
 ]

@@ -16,11 +16,16 @@ one, download it, and derive two things:
 Standard library only, so it runs anywhere (GitHub Actions included).
 """
 
+from __future__ import annotations
+
+import base64
 import gzip
+import html as htmllib
 import io
 import json
 import re
 import sys
+import urllib.parse
 import urllib.request
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -59,8 +64,27 @@ BODY_BLOCK_RE = re.compile(
     r'<(p|h2)\s+class="(clay-paragraph|clay-subheader_fancy[^"]*|list-item-text)"[^>]*>(.*?)</\1>', re.S)
 
 
+TRACKED_RE = re.compile(r'href="https://link(?:st)?\.(?:vulture|nymag)\.com/click/[^/"]+/([A-Za-z0-9_-]+)/[^"]*"')
+
+
+def untrack(match: re.Match) -> str:
+    """Resolve a newsletter click-tracking redirect (the destination is base64 in the
+    path) to its real URL, minus the subscriber id and utm tags."""
+    b64 = match.group(1)
+    try:
+        url = base64.urlsafe_b64decode(b64 + "=" * (-len(b64) % 4)).decode()
+    except Exception:
+        return 'href="#"'
+    parts = urllib.parse.urlsplit(url)
+    query = [(k, v) for k, v in urllib.parse.parse_qsl(parts.query) if k not in ("uid", "ueid") and not k.startswith("utm_")]
+    url = urllib.parse.urlunsplit(parts._replace(query=urllib.parse.urlencode(query)))
+    return f'href="{htmllib.escape(url, quote=True)}"'
+
+
 def clean_html(fragment: str) -> str:
-    """Keep only emphasis and links from a Vulture paragraph; drop everything else."""
+    """Keep only emphasis and links from a Vulture paragraph; drop everything else.
+    Tracking redirects (some hub copy is pasted from the newsletter) become real URLs."""
+    fragment = TRACKED_RE.sub(untrack, fragment)
     out, pos = [], 0
     for m in re.finditer(r"<[^>]+>", fragment):
         out.append(fragment[pos:m.start()])
@@ -312,10 +336,12 @@ def main() -> None:
         published = datetime.strptime(updated_label, "%B %d, %Y").date().isoformat()
     except (TypeError, ValueError):
         published = today
+    # Keep the date we first saw this publish, so re-runs don't rewrite it.
+    first_seen = next((h["date"] for h in history if h["key"] == key), today)
     history = [h for h in history if h["key"] != key]
     history.append({
         "key": key,
-        "date": today,
+        "date": first_seen,
         "published": published,
         "teams": {name: {"score": t["score"], "rank": t["rank"]} for name, t in members.items()},
         "movies": {m: p for m, p in movie_points.items() if p},
