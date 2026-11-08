@@ -150,7 +150,13 @@ function renderChart(members, history) {
 
 }
 
-function renderNews(snapshot) {
+// "Oct. 6, 2026" / "2026-10-06" -> sortable day key.
+const dayKey = (a) => {
+    const d = new Date(a.published ? `${a.published}T12:00:00` : (a.date || '').replace('.', ''));
+    return Number.isNaN(d.getTime()) ? '' : d.toISOString().slice(0, 10);
+};
+
+function renderNews(snapshot, emailed = []) {
     const recap = $('#recap');
     if (snapshot.recap?.length) {
         // Paragraphs come from Vulture's hub page, reduced to text plus em/strong/a by the updater.
@@ -160,7 +166,12 @@ function renderNews(snapshot) {
         recap.replaceChildren(el('p', { class: 'note' }, 'No recap found on the hub page this week.'));
     }
     const articles = snapshot.articles || [];
-    const newsletters = articles.filter((a) => a.newsletter && a.body?.length);
+    const webIssues = articles.filter((a) => a.newsletter && a.body?.length);
+    // Since mid-October issues arrive by email only (data/newsletters.json, added by
+    // scripts/add_newsletter.py). Merge with web-republished ones, one per day.
+    const seen = new Set(emailed.map(dayKey));
+    const newsletters = [...emailed, ...webIssues.filter((a) => !seen.has(dayKey(a)))]
+        .sort((a, b) => dayKey(b).localeCompare(dayKey(a)));
     // Newsletter issues get their full text, newest one open, the rest click-to-expand.
     const issues = newsletters.map((a, i) => {
         const summary = el('summary', {},
@@ -170,7 +181,9 @@ function renderNews(snapshot) {
         const body = el('div', { class: 'body' });
         // Paragraphs are Vulture's own markup, reduced to text plus em/strong/a/br by the updater.
         body.innerHTML = a.body.map((b) => `<${b.tag}>${b.html}</${b.tag}>`).join('');
-        body.append(el('p', { class: 'attribution' }, '— ', el('a', { href: a.url }, 'read on vulture.com')));
+        body.append(a.url
+            ? el('p', { class: 'attribution' }, '— ', el('a', { href: a.url }, 'read on vulture.com'))
+            : el('p', { class: 'attribution' }, '— from the emailed MFL newsletter'));
         const d = el('details', { class: 'newsletter' }, summary, body);
         if (i === 0) d.open = true;
         return d;
@@ -333,12 +346,14 @@ async function main() {
     try {
         const [league, snapshot, history, prices, rules] = await Promise.all(
             ['league', 'snapshot', 'history', 'prices', 'rules'].map(load));
+        // Emailed issues are optional: the page still works without the file.
+        const emailed = await load('newsletters').catch(() => []);
         const members = league.members.map((m, i) => ({ ...m, color: COLORS[i % COLORS.length] }));
         members.sort((a, b) => (snapshot.members[b.team]?.score ?? -1) - (snapshot.members[a.team]?.score ?? -1));
         renderMeta(snapshot, league);
         renderStandings(members, snapshot, history);
         renderChart(members, history);
-        renderNews(snapshot);
+        renderNews(snapshot, emailed);
         renderRosters(members, snapshot, prices);
         renderLeague(members, snapshot, league);
         renderMovies(members, snapshot, prices);
