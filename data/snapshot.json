@@ -1,12 +1,12 @@
 {
- "fetchedAt": "2026-11-08T17:57:51+00:00",
- "leaderboardUpdated": "November 3, 2026",
+ "fetchedAt": "2026-11-10T22:28:02+00:00",
+ "leaderboardUpdated": "November 10, 2026",
  "leaderboardUrl": "https://www.vulture.com/static/leaderboard/production/cmuec30my000h3b7egrtm2p6h.json",
- "totalTeams": 30546,
- "topScore": 519,
+ "totalTeams": 30627,
+ "topScore": 661,
  "fitMismatches": 0,
  "recap": [
-  "In its third week of release, <a href=\"https://www.vulture.com/article/nathan-fielder-has-made-the-movie-of-the-year.html\"><em>You Can See Everything</em></a> reached the top of two very important charts. The A24 film — in which Nathan Fielder embeds himself with Elizabeth Holmes in the weeks before she goes to prison and begins to dismantle all our notions of truth, objectivity, performance, and manipulation — finished first place at the weekend box office, edging past <a href=\"https://www.vulture.com/article/clayface-movie-review.html\"><em>Clayface</em></a>’s showing in its second weekend. It has now climbed up to $63 million total and boasts the best per-screen average of any film in the top 20. With the 20 bonus points that come with finishing first on the weekend, <em>You Can See Everything</em> surged past <a href=\"https://www.vulture.com/article/review-anne-hathaway-deserves-better-than-verity.html\"><em>Verity</em></a><em> </em>as the top points earner in the season to date."
+  "Step aside, M. Bison, Other Mommy, and Billy Evans: A new monster has entered the Vulture Movies Fantasy League. Industry veteran Godzilla is back and better than ever, because now he’s earning you MFL points! Back in 2023, we made the mistake of not including <em>Godzilla Minus One</em> among the draftable movies for the Movies Fantasy League. After $57 million in domestic box office and an Oscar win for Best Visual Effects went for naught as far as the MFL was concerned, we were certainly not going to let history repeat itself. You’re welcome, then, to the 4,852 of you who put <a href=\"https://www.vulture.com/article/review-godzilla-minus-zero-delivers-on-the-monster-mayhem.html\"><em>Godzilla Minus Zero</em></a><em> </em>on your team — your ship has come in. Now just be careful Godzilla doesn’t capsize it. <em>Godzilla Minus Zero</em> won the box-office weekend with a $31 million domestic gross, good enough for a +10 bonus for clearing $25 million and a +20 bonus for finishing the weekend at No. 1 — 61 points in all."
  ],
  "articles": [
   {
@@ -186,8 +186,8 @@
   "Other Mommy Can See Everything": {
    "team": "Other Mommy Can See Everything",
    "league": "dc movie club",
-   "score": 274,
-   "rank": 2321,
+   "score": 315,
+   "rank": 2850,
    "roster": [
     {
      "title": "The Odyssey",
@@ -195,19 +195,19 @@
     },
     {
      "title": "La Bola Negra",
-     "points": 21
+     "points": 22
     },
     {
      "title": "Wild Horse Nine",
-     "points": 25
+     "points": 31
     },
     {
      "title": "You Can See Everything",
-     "points": 128
+     "points": 159
     },
     {
      "title": "Other Mommy",
-     "points": 100
+     "points": 103
     },
     {
      "title": "American Doctor",
@@ -226,8 +226,8 @@
   "Ya Odyssey These Movies": {
    "team": "Ya Odyssey These Movies",
    "league": "dc movie club",
-   "score": 263,
-   "rank": 2944,
+   "score": 297,
+   "rank": 3883,
    "roster": [
     {
      "title": "The Odyssey",
@@ -247,7 +247,7 @@
     },
     {
      "title": "Other Mommy",
-     "points": 100
+     "points": 103
     },
     {
      "title": "How to Rob a Bank",
@@ -255,7 +255,7 @@
     },
     {
      "title": "You Can See Everything",
-     "points": 128
+     "points": 159
     },
     {
      "title": "Madden",
@@ -266,8 +266,8 @@
   "Rob Pattinson Freaky Little Accents": {
    "team": "Rob Pattinson Freaky Little Accents",
    "league": "dc movie club",
-   "score": 195,
-   "rank": 8865,
+   "score": 227,
+   "rank": 9739,
    "roster": [
     {
      "title": "The Odyssey",
@@ -291,11 +291,11 @@
     },
     {
      "title": "You Can See Everything",
-     "points": 128
+     "points": 159
     },
     {
      "title": "The Only Living Pickpocket in New York",
-     "points": 17
+     "points": 18
     },
     {
      "title": "Backrooms",
@@ -306,8 +306,8 @@
   "BuiltFjordTough": {
    "team": "BuiltFjordTough",
    "league": "dc movie club",
-   "score": 191,
-   "rank": 9321,
+   "score": 197,
+   "rank": 12322,
    "roster": [
     {
      "title": "The Debut",
@@ -315,7 +315,7 @@
     },
     {
      "title": "Wild Horse Nine",
-     "points": 25
+     "points": 31
     },
     {
      "title": "Elsinore",
@@ -346,98 +346,18 @@
  },
  "officialLeague": [
   {
-   "team": "Vanessa Baker",
-   "league": "dc movie club",
-   "score": 280,
-   "rank": 2072,
-   "roster": [
-    {
-     "title": "The Odyssey",
-     "points": 0
-    },
-    {
-     "title": "La Bola Negra",
-     "points": 21
-    },
-    {
-     "title": "The Hunger Games: Sunrise on the Reaping",
-     "points": 0
-    },
-    {
-     "title": "Your Mother, Your Mother, Your Mother",
-     "points": 40
-    },
-    {
-     "title": "Verity",
-     "points": 119
-    },
-    {
-     "title": "Union Town",
-     "points": 0
-    },
-    {
-     "title": "Other Mommy",
-     "points": 100
-    },
-    {
-     "title": "Musk",
-     "points": 0
-    }
-   ]
-  },
-  {
-   "team": "Other Mommy Can See Everything",
-   "league": "dc movie club",
-   "score": 274,
-   "rank": 2321,
-   "roster": [
-    {
-     "title": "The Odyssey",
-     "points": 0
-    },
-    {
-     "title": "La Bola Negra",
-     "points": 21
-    },
-    {
-     "title": "Wild Horse Nine",
-     "points": 25
-    },
-    {
-     "title": "You Can See Everything",
-     "points": 128
-    },
-    {
-     "title": "Other Mommy",
-     "points": 100
-    },
-    {
-     "title": "American Doctor",
-     "points": 0
-    },
-    {
-     "title": "Jane Elliott Against the World",
-     "points": 0
-    },
-    {
-     "title": "Union Town",
-     "points": 0
-    }
-   ]
-  },
-  {
    "team": "Sandeep",
    "league": "dc movie club",
-   "score": 274,
-   "rank": 2321,
+   "score": 320,
+   "rank": 2626,
    "roster": [
     {
      "title": "La Bola Negra",
-     "points": 21
+     "points": 22
     },
     {
      "title": "You Can See Everything",
-     "points": 128
+     "points": 159
     },
     {
      "title": "The Invite",
@@ -457,7 +377,7 @@
     },
     {
      "title": "Wildwood",
-     "points": 35
+     "points": 49
     },
     {
      "title": "Hoppers",
@@ -466,10 +386,90 @@
    ]
   },
   {
+   "team": "Other Mommy Can See Everything",
+   "league": "dc movie club",
+   "score": 315,
+   "rank": 2850,
+   "roster": [
+    {
+     "title": "The Odyssey",
+     "points": 0
+    },
+    {
+     "title": "La Bola Negra",
+     "points": 22
+    },
+    {
+     "title": "Wild Horse Nine",
+     "points": 31
+    },
+    {
+     "title": "You Can See Everything",
+     "points": 159
+    },
+    {
+     "title": "Other Mommy",
+     "points": 103
+    },
+    {
+     "title": "American Doctor",
+     "points": 0
+    },
+    {
+     "title": "Jane Elliott Against the World",
+     "points": 0
+    },
+    {
+     "title": "Union Town",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "team": "Vanessa Baker",
+   "league": "dc movie club",
+   "score": 300,
+   "rank": 3692,
+   "roster": [
+    {
+     "title": "The Odyssey",
+     "points": 0
+    },
+    {
+     "title": "La Bola Negra",
+     "points": 22
+    },
+    {
+     "title": "The Hunger Games: Sunrise on the Reaping",
+     "points": 0
+    },
+    {
+     "title": "Your Mother, Your Mother, Your Mother",
+     "points": 40
+    },
+    {
+     "title": "Verity",
+     "points": 135
+    },
+    {
+     "title": "Union Town",
+     "points": 0
+    },
+    {
+     "title": "Other Mommy",
+     "points": 103
+    },
+    {
+     "title": "Musk",
+     "points": 0
+    }
+   ]
+  },
+  {
    "team": "Ya Odyssey These Movies",
    "league": "dc movie club",
-   "score": 263,
-   "rank": 2944,
+   "score": 297,
+   "rank": 3883,
    "roster": [
     {
      "title": "The Odyssey",
@@ -489,7 +489,7 @@
     },
     {
      "title": "Other Mommy",
-     "points": 100
+     "points": 103
     },
     {
      "title": "How to Rob a Bank",
@@ -497,7 +497,7 @@
     },
     {
      "title": "You Can See Everything",
-     "points": 128
+     "points": 159
     },
     {
      "title": "Madden",
@@ -506,50 +506,10 @@
    ]
   },
   {
-   "team": "bone temple dweller",
-   "league": "dc movie club",
-   "score": 260,
-   "rank": 3063,
-   "roster": [
-    {
-     "title": "Dune: Part Three",
-     "points": 0
-    },
-    {
-     "title": "Minotaur",
-     "points": 35
-    },
-    {
-     "title": "Jumanji: Open World",
-     "points": 0
-    },
-    {
-     "title": "Verity",
-     "points": 119
-    },
-    {
-     "title": "Club Kid",
-     "points": 25
-    },
-    {
-     "title": "The Invite",
-     "points": 50
-    },
-    {
-     "title": "Sense and Sensibility",
-     "points": 31
-    },
-    {
-     "title": "The Hunger Games: Sunrise on the Reaping",
-     "points": 0
-    }
-   ]
-  },
-  {
    "team": "anthony",
    "league": "dc movie club",
-   "score": 196,
-   "rank": 8777,
+   "score": 288,
+   "rank": 4459,
    "roster": [
     {
      "title": "Digger",
@@ -577,19 +537,59 @@
     },
     {
      "title": "Godzilla Minus Zero",
-     "points": 0
+     "points": 61
     },
     {
      "title": "You Can See Everything",
-     "points": 128
+     "points": 159
+    }
+   ]
+  },
+  {
+   "team": "bone temple dweller",
+   "league": "dc movie club",
+   "score": 278,
+   "rank": 5207,
+   "roster": [
+    {
+     "title": "Dune: Part Three",
+     "points": 0
+    },
+    {
+     "title": "Minotaur",
+     "points": 35
+    },
+    {
+     "title": "Jumanji: Open World",
+     "points": 0
+    },
+    {
+     "title": "Verity",
+     "points": 135
+    },
+    {
+     "title": "Club Kid",
+     "points": 25
+    },
+    {
+     "title": "The Invite",
+     "points": 50
+    },
+    {
+     "title": "Sense and Sensibility",
+     "points": 33
+    },
+    {
+     "title": "The Hunger Games: Sunrise on the Reaping",
+     "points": 0
     }
    ]
   },
   {
    "team": "Rob Pattinson Freaky Little Accents",
    "league": "dc movie club",
-   "score": 195,
-   "rank": 8865,
+   "score": 227,
+   "rank": 9739,
    "roster": [
     {
      "title": "The Odyssey",
@@ -613,11 +613,11 @@
     },
     {
      "title": "You Can See Everything",
-     "points": 128
+     "points": 159
     },
     {
      "title": "The Only Living Pickpocket in New York",
-     "points": 17
+     "points": 18
     },
     {
      "title": "Backrooms",
@@ -626,10 +626,50 @@
    ]
   },
   {
+   "team": "Bina",
+   "league": "dc movie club",
+   "score": 198,
+   "rank": 12248,
+   "roster": [
+    {
+     "title": "Project Hail Mary",
+     "points": 10
+    },
+    {
+     "title": "Obsession",
+     "points": 10
+    },
+    {
+     "title": "Sense and Sensibility",
+     "points": 33
+    },
+    {
+     "title": "The Invite",
+     "points": 50
+    },
+    {
+     "title": "Teenage Sex and Death at Camp Miasma",
+     "points": 45
+    },
+    {
+     "title": "Wildwood",
+     "points": 49
+    },
+    {
+     "title": "I Love Boosters",
+     "points": 0
+    },
+    {
+     "title": "Klara and the Sun",
+     "points": 1
+    }
+   ]
+  },
+  {
    "team": "BuiltFjordTough",
    "league": "dc movie club",
-   "score": 191,
-   "rank": 9321,
+   "score": 197,
+   "rank": 12322,
    "roster": [
     {
      "title": "The Debut",
@@ -637,7 +677,7 @@
     },
     {
      "title": "Wild Horse Nine",
-     "points": 25
+     "points": 31
     },
     {
      "title": "Elsinore",
@@ -666,50 +706,10 @@
    ]
   },
   {
-   "team": "Bina",
-   "league": "dc movie club",
-   "score": 182,
-   "rank": 10374,
-   "roster": [
-    {
-     "title": "Project Hail Mary",
-     "points": 10
-    },
-    {
-     "title": "Obsession",
-     "points": 10
-    },
-    {
-     "title": "Sense and Sensibility",
-     "points": 31
-    },
-    {
-     "title": "The Invite",
-     "points": 50
-    },
-    {
-     "title": "Teenage Sex and Death at Camp Miasma",
-     "points": 45
-    },
-    {
-     "title": "Wildwood",
-     "points": 35
-    },
-    {
-     "title": "I Love Boosters",
-     "points": 0
-    },
-    {
-     "title": "Klara and the Sun",
-     "points": 1
-    }
-   ]
-  },
-  {
    "team": "amckay16",
    "league": "dc movie club",
-   "score": 23,
-   "rank": 28209,
+   "score": 29,
+   "rank": 28659,
    "roster": [
     {
      "title": "Werwulf",
@@ -729,7 +729,7 @@
     },
     {
      "title": "Wicker",
-     "points": 13
+     "points": 19
     },
     {
      "title": "Spider-Man: Brand New Day",
@@ -749,7 +749,7 @@
  "movies": {
   "14th": {
    "points": 0,
-   "drafted": 1761
+   "drafted": 1772
   },
   "28 Years Later: The Bone Temple": {
    "points": 0,
@@ -765,11 +765,11 @@
   },
   "A Long Winter": {
    "points": 0,
-   "drafted": 393
+   "drafted": 395
   },
   "A Statement": {
    "points": 0,
-   "drafted": 518
+   "drafted": 522
   },
   "A Talent for Murder": {
    "points": 1,
@@ -777,7 +777,7 @@
   },
   "Above the Below": {
    "points": 0,
-   "drafted": 253
+   "drafted": 258
   },
   "Ali G: Who Iz I?": {
    "points": 0,
@@ -789,7 +789,7 @@
   },
   "Alpha Gang": {
    "points": 0,
-   "drafted": 240
+   "drafted": 242
   },
   "American Doctor": {
    "points": 0,
@@ -813,7 +813,7 @@
   },
   "Avengers: Doomsday": {
    "points": 0,
-   "drafted": 7880
+   "drafted": 7925
   },
   "Backrooms": {
    "points": 10,
@@ -825,15 +825,15 @@
   },
   "Behemoth!": {
    "points": 0,
-   "drafted": 1329
+   "drafted": 1344
   },
   "Being Heumann": {
    "points": 0,
-   "drafted": 926
+   "drafted": 927
   },
   "Bitter Christmas": {
    "points": 0,
-   "drafted": 335
+   "drafted": 341
   },
   "Blue Heron": {
    "points": 20,
@@ -841,7 +841,7 @@
   },
   "Bucking Fastard": {
    "points": 0,
-   "drafted": 1145
+   "drafted": 1155
   },
   "Buddy": {
    "points": 0,
@@ -849,7 +849,7 @@
   },
   "Bunker": {
    "points": 0,
-   "drafted": 430
+   "drafted": 439
   },
   "By Any Means": {
    "points": 0,
@@ -868,7 +868,7 @@
    "drafted": 386
   },
   "Clayface": {
-   "points": 74,
+   "points": 101,
    "drafted": 2913
   },
   "Cliffhanger": {
@@ -877,7 +877,7 @@
   },
   "Closing Night": {
    "points": 0,
-   "drafted": 364
+   "drafted": 368
   },
   "Closure": {
    "points": 10,
@@ -893,7 +893,7 @@
   },
   "Coward": {
    "points": 0,
-   "drafted": 435
+   "drafted": 442
   },
   "Coyote vs. ACME": {
    "points": 0,
@@ -916,16 +916,16 @@
    "drafted": 221
   },
   "Drummer Boy": {
-   "points": 0,
-   "drafted": 178
+   "points": 9,
+   "drafted": 180
   },
   "Dune: Part Three": {
    "points": 0,
-   "drafted": 10811
+   "drafted": 10879
   },
   "Ebenezer: A Christmas Carol": {
    "points": 0,
-   "drafted": 799
+   "drafted": 803
   },
   "Elsinore": {
    "points": 15,
@@ -945,7 +945,7 @@
   },
   "Famous": {
    "points": 0,
-   "drafted": 51
+   "drafted": 54
   },
   "Fatherland": {
    "points": 25,
@@ -957,7 +957,7 @@
   },
   "Focker-in-Law": {
    "points": 0,
-   "drafted": 2090
+   "drafted": 2114
   },
   "Forgotten Island": {
    "points": 0,
@@ -985,11 +985,11 @@
   },
   "Ghost Soldier": {
    "points": 0,
-   "drafted": 79
+   "drafted": 83
   },
   "Godzilla Minus Zero": {
-   "points": 0,
-   "drafted": 4831
+   "points": 61,
+   "drafted": 4852
   },
   "Good Luck. Have Fun, Don't Die": {
    "points": 0,
@@ -1001,7 +1001,7 @@
   },
   "Heartland": {
    "points": 0,
-   "drafted": 133
+   "drafted": 137
   },
   "Her Private Hell": {
    "points": 0,
@@ -1009,11 +1009,11 @@
   },
   "Hershey": {
    "points": 0,
-   "drafted": 965
+   "drafted": 978
   },
   "Hexed": {
    "points": 0,
-   "drafted": 1151
+   "drafted": 1163
   },
   "Hokum": {
    "points": 0,
@@ -1033,7 +1033,7 @@
   },
   "How to Rob a Bank": {
    "points": 0,
-   "drafted": 1322
+   "drafted": 1346
   },
   "I Love Boosters": {
    "points": 0,
@@ -1041,7 +1041,7 @@
   },
   "I Play Rocky": {
    "points": 0,
-   "drafted": 6122
+   "drafted": 6134
   },
   "I Swear": {
    "points": 0,
@@ -1057,7 +1057,7 @@
   },
   "In Waves": {
    "points": 0,
-   "drafted": 213
+   "drafted": 214
   },
   "In the Grey": {
    "points": 0,
@@ -1065,7 +1065,7 @@
   },
   "Ink": {
    "points": 0,
-   "drafted": 621
+   "drafted": 631
   },
   "Insidious: Out of the Further": {
    "points": 0,
@@ -1073,7 +1073,7 @@
   },
   "Iron Boy": {
    "points": 0,
-   "drafted": 775
+   "drafted": 781
   },
   "Is God Is": {
    "points": 10,
@@ -1084,8 +1084,8 @@
    "drafted": 220
   },
   "Jimmy": {
-   "points": 0,
-   "drafted": 340
+   "points": 2,
+   "drafted": 345
   },
   "Josephine": {
    "points": 40,
@@ -1093,14 +1093,14 @@
   },
   "Jumanji: Open World": {
    "points": 0,
-   "drafted": 4101
+   "drafted": 4127
   },
   "Klara and the Sun": {
    "points": 1,
    "drafted": 1588
   },
   "La Bola Negra": {
-   "points": 21,
+   "points": 22,
    "drafted": 8021
   },
   "La Gradiva": {
@@ -1121,7 +1121,7 @@
   },
   "Look Back": {
    "points": 0,
-   "drafted": 682
+   "drafted": 692
   },
   "Lorne": {
    "points": 0,
@@ -1133,7 +1133,7 @@
   },
   "Madden": {
    "points": 0,
-   "drafted": 4169
+   "drafted": 4196
   },
   "Marc by Sofia": {
    "points": 0,
@@ -1177,7 +1177,7 @@
   },
   "Mr. Irrelevant: The John Tuggle Story": {
    "points": 0,
-   "drafted": 559
+   "drafted": 564
   },
   "Musk": {
    "points": 0,
@@ -1201,7 +1201,7 @@
   },
   "Nuisance Bear": {
    "points": 0,
-   "drafted": 303
+   "drafted": 304
   },
   "Obsession": {
    "points": 10,
@@ -1229,10 +1229,10 @@
   },
   "Onwards and Sideways": {
    "points": 0,
-   "drafted": 71
+   "drafted": 73
   },
   "Other Mommy": {
-   "points": 100,
+   "points": 103,
    "drafted": 2037
   },
   "Paper Tiger": {
@@ -1269,7 +1269,7 @@
   },
   "Prima Facie": {
    "points": 0,
-   "drafted": 263
+   "drafted": 266
   },
   "Primetime": {
    "points": 40,
@@ -1284,16 +1284,16 @@
    "drafted": 83
   },
   "Ramayana": {
-   "points": 0,
-   "drafted": 550
+   "points": 8,
+   "drafted": 557
   },
   "Ray Gunn": {
    "points": 0,
-   "drafted": 2097
+   "drafted": 2114
   },
   "Rehearsals for a Revolution": {
    "points": 0,
-   "drafted": 1011
+   "drafted": 1018
   },
   "Resident Evil": {
    "points": 0,
@@ -1305,7 +1305,7 @@
   },
   "Rose": {
    "points": 0,
-   "drafted": 626
+   "drafted": 633
   },
   "Rose of Nevada": {
    "points": 0,
@@ -1320,7 +1320,7 @@
    "drafted": 195
   },
   "Sense and Sensibility": {
-   "points": 31,
+   "points": 33,
    "drafted": 1603
   },
   "Shaun the Sheep: The Beast of Mossy Bottom": {
@@ -1344,7 +1344,7 @@
    "drafted": 2140
   },
   "Street Fighter": {
-   "points": 98,
+   "points": 102,
    "drafted": 1261
   },
   "Supergirl": {
@@ -1357,7 +1357,7 @@
   },
   "Tangles": {
    "points": 0,
-   "drafted": 938
+   "drafted": 946
   },
   "Teenage Sex and Death at Camp Miasma": {
    "points": 45,
@@ -1381,19 +1381,19 @@
   },
   "The Angry Birds Movie 3": {
    "points": 0,
-   "drafted": 1132
+   "drafted": 1152
   },
   "The Boy in the Iron Box": {
    "points": 0,
-   "drafted": 29
+   "drafted": 30
   },
   "The Bride!": {
    "points": 0,
    "drafted": 227
   },
   "The Cat in the Hat": {
-   "points": 0,
-   "drafted": 1544
+   "points": 20,
+   "drafted": 1552
   },
   "The Christophers": {
    "points": 15,
@@ -1425,11 +1425,11 @@
   },
   "The Further Misadventures of Cliff Booth": {
    "points": 0,
-   "drafted": 1793
+   "drafted": 1809
   },
   "The Gallerist": {
    "points": 0,
-   "drafted": 535
+   "drafted": 544
   },
   "The History of Concrete": {
    "points": 0,
@@ -1437,11 +1437,11 @@
   },
   "The Housewife": {
    "points": 0,
-   "drafted": 198
+   "drafted": 205
   },
   "The Hunger Games: Sunrise on the Reaping": {
    "points": 0,
-   "drafted": 8495
+   "drafted": 8547
   },
   "The Incomer": {
    "points": 0,
@@ -1457,7 +1457,7 @@
   },
   "The Liberation": {
    "points": 0,
-   "drafted": 169
+   "drafted": 171
   },
   "The Magic Faraway Tree": {
    "points": 0,
@@ -1465,7 +1465,7 @@
   },
   "The Man I Love": {
    "points": 0,
-   "drafted": 462
+   "drafted": 472
   },
   "The Mandalorian and Grogu": {
    "points": 0,
@@ -1488,7 +1488,7 @@
    "drafted": 8174
   },
   "The Only Living Pickpocket in New York": {
-   "points": 17,
+   "points": 18,
    "drafted": 1432
   },
   "The Sheep Detectives": {
@@ -1513,7 +1513,7 @@
   },
   "The Unknown": {
    "points": 0,
-   "drafted": 98
+   "drafted": 100
   },
   "The Uprising": {
    "points": 0,
@@ -1537,7 +1537,7 @@
   },
   "To Hold a Mountain": {
    "points": 0,
-   "drafted": 412
+   "drafted": 417
   },
   "Tony": {
    "points": 0,
@@ -1553,7 +1553,7 @@
   },
   "Tutu": {
    "points": 0,
-   "drafted": 292
+   "drafted": 293
   },
   "Unabomber": {
    "points": 0,
@@ -1569,54 +1569,54 @@
   },
   "Union Town": {
    "points": 0,
-   "drafted": 1010
+   "drafted": 1023
   },
   "Verity": {
-   "points": 119,
+   "points": 135,
    "drafted": 2367
   },
   "Victorian Psycho": {
    "points": 0,
-   "drafted": 183
+   "drafted": 190
   },
   "Violent Night 2": {
    "points": 0,
-   "drafted": 367
+   "drafted": 373
   },
   "Way of the Warrior Kid": {
    "points": 0,
-   "drafted": 79
+   "drafted": 81
   },
   "Werwulf": {
    "points": 0,
-   "drafted": 3005
+   "drafted": 3032
   },
   "Whalefall": {
-   "points": 16,
+   "points": 17,
    "drafted": 1678
   },
   "Wicker": {
-   "points": 13,
+   "points": 19,
    "drafted": 4486
   },
   "Wild Horse Nine": {
-   "points": 25,
+   "points": 31,
    "drafted": 6326
   },
   "Wildwood": {
-   "points": 35,
+   "points": 49,
    "drafted": 5213
   },
   "Woman Unknown": {
    "points": 0,
-   "drafted": 211
+   "drafted": 214
   },
   "Wuthering Heights": {
    "points": 0,
    "drafted": 355
   },
   "You Can See Everything": {
-   "points": 128,
+   "points": 159,
    "drafted": 9513
   },
   "You, Me & Tuscany": {
@@ -1629,7 +1629,7 @@
   },
   "Zero A.D.": {
    "points": 0,
-   "drafted": 181
+   "drafted": 184
   }
  }
 }

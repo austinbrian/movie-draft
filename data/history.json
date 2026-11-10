@@ -231,5 +231,83 @@
    "You Can See Everything": 128,
    "Your Mother, Your Mother, Your Mother": 40
   }
+ },
+ {
+  "key": "November 10, 2026",
+  "date": "2026-11-10",
+  "published": "2026-11-10",
+  "teams": {
+   "Other Mommy Can See Everything": {
+    "score": 315,
+    "rank": 2850
+   },
+   "Ya Odyssey These Movies": {
+    "score": 297,
+    "rank": 3883
+   },
+   "Rob Pattinson Freaky Little Accents": {
+    "score": 227,
+    "rank": 9739
+   },
+   "BuiltFjordTough": {
+    "score": 197,
+    "rank": 12322
+   }
+  },
+  "movies": {
+   "A Fox Under a Pink Moon": 10,
+   "A Talent for Murder": 1,
+   "All of a Sudden": 50,
+   "Artificial": 15,
+   "Backrooms": 10,
+   "Blue Heron": 20,
+   "Clarissa": 50,
+   "Clayface": 101,
+   "Closure": 10,
+   "Club Kid": 25,
+   "Digger": 18,
+   "Drummer Boy": 9,
+   "Elsinore": 15,
+   "Everest: The Other Side": 1,
+   "Fatherland": 25,
+   "Fjord": 1,
+   "Godzilla Minus Zero": 61,
+   "Is God Is": 10,
+   "Jimmy": 2,
+   "Josephine": 40,
+   "Klara and the Sun": 1,
+   "La Bola Negra": 22,
+   "La Gradiva": 40,
+   "Michael": 10,
+   "Minotaur": 35,
+   "NAZA": 11,
+   "Obsession": 10,
+   "Once Upon a Time in Harlem": 10,
+   "Other Mommy": 103,
+   "Paper Tiger": 30,
+   "Possible Love": 35,
+   "Primetime": 40,
+   "Project Hail Mary": 10,
+   "Queen at Sea": 15,
+   "Ramayana": 8,
+   "Sense and Sensibility": 33,
+   "Street Fighter": 102,
+   "Teenage Sex and Death at Camp Miasma": 45,
+   "Tender Loving Care": 50,
+   "The Cat in the Hat": 20,
+   "The Christophers": 15,
+   "The Debut": 30,
+   "The Drama": 10,
+   "The Invite": 50,
+   "The Only Living Pickpocket in New York": 18,
+   "The Social Reckoning": 9,
+   "Verity": 135,
+   "Whalefall": 17,
+   "Wicker": 19,
+   "Wild Horse Nine": 31,
+   "Wildwood": 49,
+   "You Can See Everything": 159,
+   "Your Mother, Your Mother, Your Mother": 40
+  }
  }
 ]
